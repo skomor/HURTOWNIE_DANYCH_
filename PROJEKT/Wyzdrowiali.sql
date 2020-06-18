@@ -4,17 +4,17 @@ GO
 create table tmp (id varchar(255), id_czas varchar(255), kraj varchar(255), liczba_zakazen varchar(255), liczba_zgonow varchar(255), nowe_przypadki varchar(255), wyzdrowiali varchar(255), aktywne_przypadki varchar(255));
 GO
 
-alter table FILE_CORONA_STAGE
+/*alter table FILE_CORONA_STAGE
 add id varchar(255) default '0';
-GO
+GO*/
 
 update FILE_CORONA_STAGE
 set id = concat(date, country_or_region);
 GO
 
-alter table FILE_CORONA_REC_STAGE
+/*alter table FILE_CORONA_REC_STAGE
 add id varchar(255) default '0';
-GO
+GO*/
 
 update FILE_CORONA_REC_STAGE
 set id = concat(date, country);

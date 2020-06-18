@@ -8,25 +8,15 @@
   DTS:Description="SSIS Package Description"
   DTS:DTSID="{89F7E6A8-9C40-4328-A991-2ED56B8B85BC}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.121"
+  DTS:LastModifiedProductVersion="15.0.2000.94"
   DTS:LocaleID="1045"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="pierwszycorona"
-  DTS:VersionBuild="42"
-  DTS:VersionGUID="{C858C1B7-3394-4E82-94FA-6DFAB13C0C06}">
+  DTS:VersionBuild="52"
+  DTS:VersionGUID="{28DF6C44-F92B-4680-893F-5049DA40CC78}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DestinationConnectionExcel]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{D3A078BF-66FE-4B50-A1D2-665426F5ACF5}"
-      DTS:ObjectName="DestinationConnectionExcel">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
       DTS:CreationName="OLEDB"
@@ -34,7 +24,7 @@
       DTS:ObjectName="DestinationConnectionOLEDB">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=DESKTOP-4GVPIF1\COVID;Initial Catalog=Coronavirus;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=false;" />
+          DTS:ConnectionString="Data Source=SKOMO-KOMP\SKOMOROWSKIHD;Initial Catalog=Coronavirus;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=false;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -44,785 +34,50 @@
       DTS:ObjectName="First Delete From.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\First Delete From.sql" />
+          DTS:ConnectionString="D:\hurtownie\PROJEKT\First Delete From.sql" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{7F57E068-CFA9-49BE-A280-3F43CE3AFF4F}"
-      DTS:ObjectName="Flat File Connection Manager">
+      DTS:refId="Package.ConnectionManagers[HTTP Connection Manager]"
+      DTS:CreationName="HTTP"
+      DTS:DTSID="{96BEEA33-7008-4E40-9C72-1C129BF54431}"
+      DTS:ObjectName="HTTP Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona_06_08.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="date"
-              DTS:DTSID="{38DB1051-8475-4283-B4FB-7FB14821F38D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_or_region"
-              DTS:DTSID="{825B8FAF-3DBD-4583-B176-0C5956480E8F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="daily_new_cases"
-              DTS:DTSID="{8FF1BBD4-D1EE-41E5-9310-273FC96982A0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_cases"
-              DTS:DTSID="{C3DB3B61-4AE9-4109-9C8D-127E80C002AC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_cases_prev_day"
-              DTS:DTSID="{9958F624-4CB6-439D-859A-12F5354F842D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="daily_new_deaths"
-              DTS:DTSID="{DA22654D-0620-4AE5-9065-9E15A7F5933D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_deaths"
-              DTS:DTSID="{843E7B77-6CA5-4209-A1D5-E444D5476FD5}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_deaths_prev_day"
-              DTS:DTSID="{EB6091F6-77E6-41DA-9F90-A2EEB00B90C5}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="data_source"
-              DTS:DTSID="{FDB71C1E-8B39-47D5-9701-7C06476F11F9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="lat"
-              DTS:DTSID="{D2598E2C-9076-4E7E-B634-DAF9739FD217}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="long"
-              DTS:DTSID="{DC4D675C-BA1C-4C09-BE01-69840C0829F2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="first_case_country_rank"
-              DTS:DTSID="{F7011D16-C1D9-486B-BDDA-0067F49A527C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="hundred_case_country_rank"
-              DTS:DTSID="{02115A27-9C73-43A3-BFC4-2ABA534D46D7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_code_2"
-              DTS:DTSID="{AAF6F724-E146-4E11-ADBD-18719578054E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_code_3"
-              DTS:DTSID="{7E4C84A6-1E8E-420D-B196-396ECEC383A0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_population_2018"
-              DTS:DTSID="{E6899B16-6D2B-49A6-9935-8E8A96FB1760}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_median_age"
-              DTS:DTSID="{D1E2BE06-BFEF-4FF8-A447-B2E6D0FC2672}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_running_agg"
-              DTS:DTSID="{C2328CF8-5742-4945-B76D-19464F4E2BE4}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
+          DTS:ConnectionString="https://raw.githubusercontent.com/jbarton311/coronavirus-analysis/master/coronavirus/output_data/JHU_aggregated_country_and_day.csv">
+          <DTS:HttpConnection
+            DTS:ServerURL="https://raw.githubusercontent.com/jbarton311/coronavirus-analysis/master/coronavirus/output_data/JHU_aggregated_country_and_day.csv">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+XuVSTYie0+G6mq24XiHHwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADv5SsIlGnaJJqM5TAemuhTLRNG8CXeieE3zXJGKbc4QQAAAAAOgAAAAAIAACAAAAARRASirOZ9nj0GYktc4KPKlPOaHiWu60kb7WjC7bELmRAAAADyYnD0f98955VSbXSqd3TBQAAAAGk08P4iNMp2TzZ0rQmY8ZkcnJvxmGl0L97vJOD11fobqsDQATPeTQW5TFbBVFgOFfr8cri20AkllJtEzwNbjeI</DTS:Property>
+            <DTS:Property
+              DTS:Name="ProxyPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+XuVSTYie0+G6mq24XiHHwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABwQdH8AFjs7KlHOvxk7zcompmR0ZrUVYvrPGto5MnwRwAAAAAOgAAAAAIAACAAAADLTAzMFU3bsVcYoj/npsxTCUbZOQHo8g+s2W6CEAtWnhAAAADDxDThLgSxaD/SChY+ShnUQAAAADUyWnNciNkXLVbAQOoF/by9ewJJneUHQ+Pk1ATvuveDaPvUcjw+NQjLO6CEb/Nb/oUdhGN/oUQn3Yf1zs7g10I</DTS:Property>
+          </DTS:HttpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager Corona]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{22BEB836-6588-4AEE-9492-215F47F07118}"
-      DTS:ObjectName="Flat File Connection Manager Corona">
+      DTS:refId="Package.ConnectionManagers[HTTP Connection Manager 2]"
+      DTS:CreationName="HTTP"
+      DTS:DTSID="{87e4e039-2b36-4484-abeb-465b7035366d}"
+      DTS:ObjectName="HTTP Connection Manager 2">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona_06_14.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="date"
-              DTS:DTSID="{EE3C1C76-D03A-4A66-894C-07A6FA71093B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_or_region"
-              DTS:DTSID="{ECAEA531-349B-434B-AD33-A10E867CD75D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="daily_new_cases"
-              DTS:DTSID="{912BE2C6-1EED-434F-A50C-E0F006BD7067}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_cases"
-              DTS:DTSID="{015ECA7A-AF45-4E61-853A-06EA401208EF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_cases_prev_day"
-              DTS:DTSID="{98EAE781-B1A9-4E4D-9AB8-3506526B02A9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="daily_new_deaths"
-              DTS:DTSID="{94CFDEA7-05DD-41E9-BB15-571DF582279A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_deaths"
-              DTS:DTSID="{AF02EB03-1D96-4D9A-ACA4-299B03C64B03}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_deaths_prev_day"
-              DTS:DTSID="{C168D290-3A58-49D0-8896-8F0F7E8D11A6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="data_source"
-              DTS:DTSID="{A51D9026-230F-4866-8467-C007A10B89B9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="lat"
-              DTS:DTSID="{D3A0163B-2404-4836-A2E1-D77592E8C7E1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="long"
-              DTS:DTSID="{6DE78853-DA98-4A39-B65C-5B66E9C69BB0}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="first_case_country_rank"
-              DTS:DTSID="{7B056345-98A5-4E02-BF62-909E3829CC0E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="hundred_case_country_rank"
-              DTS:DTSID="{61F8EC52-1FE6-46D5-90E3-3319EEAA24B2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_code_2"
-              DTS:DTSID="{0D0134FB-FE5D-4DB2-8449-7BB367762675}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_code_3"
-              DTS:DTSID="{2DEC89A9-6584-4D93-BD25-8CF6979F7EAF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_population_2018"
-              DTS:DTSID="{154C0938-93BE-4E15-A217-54ABDC76ADA9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_median_age"
-              DTS:DTSID="{F765EF6A-B9E1-44B5-98A9-0AA95E9A8D67}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_running_agg"
-              DTS:DTSID="{54D56D66-3048-45FD-9282-074F45DA4756}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager Corona recovered]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{43FE3E6B-3179-4B21-82D4-AE166EEADB9D}"
-      DTS:ObjectName="Flat File Connection Manager Corona recovered">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona_rec_06_14.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Date"
-              DTS:DTSID="{AEB743CF-CD38-48DC-A017-4C46365BFCDD}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Country"
-              DTS:DTSID="{A1789EDB-4752-4600-82D5-9F7DC8E165DE}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Confirmed"
-              DTS:DTSID="{7C3264DF-911A-4703-BE41-C7786F306EC4}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Recovered"
-              DTS:DTSID="{E6372B74-D18E-4567-902C-4E7CBC0940B7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Deaths"
-              DTS:DTSID="{A8C55FE0-B77B-4A2D-88C5-6D161B243003}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager Facts]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{9058A540-4A3E-40C1-855B-F0DA32C1C28A}"
-      DTS:ObjectName="Flat File Connection Manager Facts">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona_06_08.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="date"
-              DTS:DTSID="{B66A15EC-A18E-42BF-8B8B-DC5E3CE9FA10}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_or_region"
-              DTS:DTSID="{F1668992-F22E-4AB1-92E4-111944B6C88A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="daily_new_cases"
-              DTS:DTSID="{06CD8561-E0C6-400F-96AF-1FE88C660678}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_cases"
-              DTS:DTSID="{245F9D9C-74E4-4262-827C-EDCC73CA0B23}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_cases_prev_day"
-              DTS:DTSID="{2221F568-B346-4335-9715-4173842AF289}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="daily_new_deaths"
-              DTS:DTSID="{5B2BD91E-C0B1-4E60-8046-30096BD445DA}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_deaths"
-              DTS:DTSID="{62CC31EC-110C-4262-8C28-882388288000}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_deaths_prev_day"
-              DTS:DTSID="{4C63A427-BCFD-4D60-99E1-D37F9545CB81}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="data_source"
-              DTS:DTSID="{E7321C2D-2530-466C-8660-03BEB3CF776A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="lat"
-              DTS:DTSID="{5F2B735E-7E58-4D23-BAF3-CD76A70AE72C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="long"
-              DTS:DTSID="{EA456826-B373-424E-BDA1-68B46502B25B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="first_case_country_rank"
-              DTS:DTSID="{769D781E-7BC2-4ABE-A457-4BE09AC5BA8C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="hundred_case_country_rank"
-              DTS:DTSID="{C5C54118-C94E-46B8-BE75-6F9EEFC0F654}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_code_2"
-              DTS:DTSID="{D0BF3B86-C440-46C8-B2C4-AB5DF15230E7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_code_3"
-              DTS:DTSID="{37041E9A-1E17-42E4-8C5E-2F7CB41E440F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_population_2018"
-              DTS:DTSID="{D9DDEB71-25C8-4911-B8F9-0DEBAC1E322A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_median_age"
-              DTS:DTSID="{3CF7EC39-512F-4D0D-886B-5C0CB7D3DCF3}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_running_agg"
-              DTS:DTSID="{C061A774-528A-4173-BC37-49FCAC414A80}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager Geografia]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{B7D03426-483F-46F5-884E-7DC071B41B3E}"
-      DTS:ObjectName="Flat File Connection Manager Geografia">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\Geography.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Continent"
-              DTS:DTSID="{A63AA623-F195-4EFA-8845-991A1170CA9C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Country"
-              DTS:DTSID="{279B42F8-0A1F-4A7F-81CF-4E90A8972B3F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Population"
-              DTS:DTSID="{CBDF4EF6-5049-4DB7-A797-CE73A092C8D5}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="GDP"
-              DTS:DTSID="{290EEAEF-0A91-4C9D-BD3C-2F5C9988A49D}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager Geography]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{29AC3E45-464A-4E11-B382-2443FA286D4C}"
-      DTS:ObjectName="Flat File Connection Manager Geography">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\Geography.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Continent"
-              DTS:DTSID="{86AB1641-7313-412E-8383-999C78EEF37D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Country"
-              DTS:DTSID="{E9A97223-6AE2-42BD-A25B-D7BAF89954A1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Population"
-              DTS:DTSID="{190B6F84-A0DA-47B0-B8B6-A3E38AB0DB60}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="GDP"
-              DTS:DTSID="{800E42EA-C2C4-435A-BE51-785BECA8F833}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Geografia]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{380F4D4F-94C8-44DA-A9D5-3F975FEFF340}"
-      DTS:ObjectName="Geografia">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\geografia.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Continent"
-              DTS:DTSID="{CECCB3F2-8767-4E56-B540-CF6B64DDE16D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Country"
-              DTS:DTSID="{92323467-BB4F-410B-9D89-DDE1FA612166}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Population"
-              DTS:DTSID="{98805904-431B-401B-BCD9-29EDE8800587}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="GDP"
-              DTS:DTSID="{893CE49D-E3DF-47FC-89E8-0D3FA36C8775}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
+          DTS:ConnectionString="https://raw.githubusercontent.com/datasets/covid-19/master/data/countries-aggregated.csv?fbclid=IwAR23a4R8iGVskwQRtGWXw6MDGrMAldqigevs4NCQ58xocqY4yz_UMFsS99Y">
+          <DTS:HttpConnection
+            DTS:ServerURL="https://raw.githubusercontent.com/datasets/covid-19/master/data/countries-aggregated.csv?fbclid=IwAR23a4R8iGVskwQRtGWXw6MDGrMAldqigevs4NCQ58xocqY4yz_UMFsS99Y">
+            <DTS:Property
+              DTS:Name="ServerPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+XuVSTYie0+G6mq24XiHHwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABRDhgPZXbCJbT9gUFC6kFg95C2BmyAuIahaLvdsyZdfwAAAAAOgAAAAAIAACAAAAATY4bEeow5GnUuVpudBJjfVf4+QwR09myIf+6xYAkFQxAAAABeYU+3C+pnkln3x8eEBf0tQAAAAOAPMkKTvVBit57kb8SmcrQyTHGepIVp/2XAOLNrUztxIKgZsa8OiepcvdaU8sO4JOh3mKd2P2Aswk4rQN/k4m8</DTS:Property>
+            <DTS:Property
+              DTS:Name="ProxyPassword"
+              Sensitive="1"
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+XuVSTYie0+G6mq24XiHHwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD+8TBKfZTUW7Yb+VvfMyVF2x50HbkAb57nPSxI0lLVjgAAAAAOgAAAAAIAACAAAAAmxrqPuaTQWB7ntVw/RuDsKYzPRghdSOY5dZYeqE17IhAAAAAFlYpZW16AOaoztycE70KBQAAAAI39oXXkZG/OI3gJndh3zHsVnYqutKAFyjjVVGdTnMkvKwA8+i9o6D7hmUOg0ezom7Rz3q5tcuJK57qk29IycDA</DTS:Property>
+          </DTS:HttpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -844,13 +99,13 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000A_"
           DTS:ColumnNamesInFirstDataRow="True"
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1250"
-          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona.csv">
+          DTS:ConnectionString="D:\hurtownie\PROJEKT\corona.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -859,7 +114,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="date"
-              DTS:DTSID="{CA9E42F1-C003-471E-A42A-B3D6FB252315}"
+              DTS:DTSID="{C35030D6-FB9E-4BAC-85A1-5E3E063C79E5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -868,7 +123,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="country_or_region"
-              DTS:DTSID="{AB32278B-BD23-49F7-BE2F-954A28ABA00D}"
+              DTS:DTSID="{570A3C92-2F59-4013-858C-CC8268948681}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -877,7 +132,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="daily_new_cases"
-              DTS:DTSID="{417D8522-FABD-4B9D-A0A2-8629A1C77651}"
+              DTS:DTSID="{C5CB3F23-3C0B-469E-A23D-E49CE729B65F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -886,7 +141,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="running_total_cases"
-              DTS:DTSID="{4FCB7F23-8BD6-4A2C-8F20-1486ED42ED8A}"
+              DTS:DTSID="{1BB74C06-3192-4DB2-9C49-3C1A8092AC3C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -895,7 +150,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="running_total_cases_prev_day"
-              DTS:DTSID="{6E21A50B-0A8F-4FA2-9B50-797CCAA38BF6}"
+              DTS:DTSID="{95722D51-8141-4708-B212-2E4C4F4321BF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -904,7 +159,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="daily_new_deaths"
-              DTS:DTSID="{1CF92890-2C95-4ACA-A93C-96317A570051}"
+              DTS:DTSID="{7F0EDA10-D3BF-44B4-83A1-5AFF10D7F98A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -913,7 +168,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="running_total_deaths"
-              DTS:DTSID="{98244E2B-8B6C-482E-A176-7F7BAF40000F}"
+              DTS:DTSID="{08C4B159-CE40-4B9F-99CE-0ADD661DE550}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -922,7 +177,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="running_total_deaths_prev_day"
-              DTS:DTSID="{8D2C8BE8-050C-49DE-B042-4FA9930B15CE}"
+              DTS:DTSID="{93F4F788-D540-4A0A-9635-EEACBB852D27}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -931,7 +186,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="data_source"
-              DTS:DTSID="{4A345CCB-FDC8-4406-9470-3448B31E6C33}"
+              DTS:DTSID="{94DC3E96-F9B0-42D8-8E19-18C530BF1CFC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -940,7 +195,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="lat"
-              DTS:DTSID="{649E873C-8FE9-47E3-84C7-955A523E6FF8}"
+              DTS:DTSID="{EF4DDB92-C9E8-4DDD-A1D2-6429B30DBA60}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -949,7 +204,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="long"
-              DTS:DTSID="{5051BE55-E280-4B4B-A802-06C62C670034}"
+              DTS:DTSID="{30368AEC-D356-43B8-83F8-F22D1660D225}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -958,7 +213,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="first_case_country_rank"
-              DTS:DTSID="{19A200CE-FD22-456D-B074-A5A97A681005}"
+              DTS:DTSID="{A2B37896-1072-450A-9028-7556842247C0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -967,7 +222,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="hundred_case_country_rank"
-              DTS:DTSID="{51FBF912-7C26-4617-AC72-8EF9BE7F034E}"
+              DTS:DTSID="{ECFB38A7-7674-40D2-962C-30776FB6B0B8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -976,7 +231,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="country_code_2"
-              DTS:DTSID="{CD2A9191-8835-4250-A497-276FF73E75A4}"
+              DTS:DTSID="{71435A96-597B-4446-A6F0-065D44558367}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -985,7 +240,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="country_code_3"
-              DTS:DTSID="{813AAD94-1B04-46D4-9B22-6F4F0432B959}"
+              DTS:DTSID="{E7D6327E-4BC2-4DF2-A668-090CF41A3857}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -994,7 +249,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="country_population_2018"
-              DTS:DTSID="{635DC4A4-1693-4C1A-8B5F-904724393EEF}"
+              DTS:DTSID="{B2FE9E93-2986-4835-B96A-9C9CC4115662}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1003,16 +258,16 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="country_median_age"
-              DTS:DTSID="{55AD419F-B380-4EE8-AA0B-174FB3CE101B}"
+              DTS:DTSID="{BE9C3830-C2E9-47E5-92AD-097C92949AC3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:ColumnDelimiter="_x000A_"
               DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="country_running_agg"
-              DTS:DTSID="{D8EFA320-355D-4FB8-974F-6BE6D90420D0}"
+              DTS:DTSID="{52EAAE8B-D321-4CEF-B70E-875431807959}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1032,7 +287,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1250"
-          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona_rec.csv">
+          DTS:ConnectionString="D:\hurtownie\PROJEKT\corona_rec.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1041,7 +296,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Date"
-              DTS:DTSID="{67795AA1-4B80-45AD-BC7F-4B6641894A17}"
+              DTS:DTSID="{F57B3CA8-35AA-4CB5-B510-5912E584CC22}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1050,7 +305,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Country"
-              DTS:DTSID="{0BE59031-5280-477C-9F97-8026F5393976}"
+              DTS:DTSID="{588DC781-7E63-4040-AED1-2517D68836DD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1059,7 +314,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Confirmed"
-              DTS:DTSID="{77353700-E431-47CE-BADC-5828A0C3EAD5}"
+              DTS:DTSID="{CC4DA2F0-AC28-4CF3-8810-C07CD147A416}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1068,7 +323,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Recovered"
-              DTS:DTSID="{344CEA38-5502-480B-A275-C0E441267042}"
+              DTS:DTSID="{227F9B2A-4F76-4119-9CB0-C92821E9B169}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1077,258 +332,30 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Deaths"
-              DTS:DTSID="{950FDBBC-27CE-4262-9D60-30ED73AAEA65}"
+              DTS:DTSID="{42A78A73-F7CE-4E9F-9229-E46E734D7A1E}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Load Geografia]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{440D63AE-F31D-4BF0-B853-077FC53C988E}"
-      DTS:ObjectName="Load Geografia">
+      DTS:refId="Package.ConnectionManagers[pobrane1.csv]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{B7E588A4-D08C-4EEE-9F6C-776ABDF7E884}"
+      DTS:ObjectName="pobrane1.csv">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\geografia.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Continent"
-              DTS:DTSID="{088BB70E-5379-4969-9EB6-880B8FAC5DE8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Country"
-              DTS:DTSID="{0F7A6459-AE17-4A93-9AB3-55E12CF157E3}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Population"
-              DTS:DTSID="{51F4822B-8FCE-4879-8652-6FE0A8E0FF10}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="GDP"
-              DTS:DTSID="{75D0BF69-F6CB-4526-8E76-EE230343EBA0}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="D:\hurtownie\PROJEKT\corona.csv" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[SourceConnectionExcel]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{9037A488-C5D3-4442-9198-246CF9B88C2D}"
-      DTS:ObjectName="SourceConnectionExcel">
+      DTS:refId="Package.ConnectionManagers[pobrane2.csv]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{9f4fc01f-bf58-4bf0-9c61-c731c918f04b}"
+      DTS:ObjectName="pobrane2.csv">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[SourceConnectionFlatFile]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{1832DB21-7B3C-4485-9A39-592ED8F27D71}"
-      DTS:ObjectName="SourceConnectionFlatFile">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1045"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1250"
-          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona_06_08.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="date"
-              DTS:DTSID="{AFFE9F80-7F90-432C-85A6-DE1E76996CC8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_or_region"
-              DTS:DTSID="{A44A0B4D-66F1-4E84-9D86-F09F4213396C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="daily_new_cases"
-              DTS:DTSID="{9CE44464-8D7F-453B-89BC-8130603291DD}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_cases"
-              DTS:DTSID="{1018B4A4-6740-4C84-859B-90AD8A7F299C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_cases_prev_day"
-              DTS:DTSID="{AADDBFEA-BF0A-43CB-98C4-E28862E4BB87}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="daily_new_deaths"
-              DTS:DTSID="{9C95C89B-B81D-4D02-BA1D-BE59F59D359E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_deaths"
-              DTS:DTSID="{1453021B-1E13-45A1-BEC3-5EA4E856624F}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="running_total_deaths_prev_day"
-              DTS:DTSID="{6DE33DA1-8E60-4516-9B47-A313B8E0AC61}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="data_source"
-              DTS:DTSID="{3FC85EA7-E9FB-464D-8AA9-00D0E9988BB2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="lat"
-              DTS:DTSID="{07AF918A-206A-4152-B714-5A8083AD1C19}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="long"
-              DTS:DTSID="{862BFD82-B531-4B05-A0C8-B0C60013B213}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="first_case_country_rank"
-              DTS:DTSID="{13828400-CBE9-4CFC-A197-358C62AF4F2E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="hundred_case_country_rank"
-              DTS:DTSID="{FB536EAD-29DB-4060-B870-4B270941964B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_code_2"
-              DTS:DTSID="{ED260117-A250-44A4-89BC-5B2B0DDA8441}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_code_3"
-              DTS:DTSID="{A6CCD35E-F6ED-446C-ADB9-9FD2CD5B0A21}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_population_2018"
-              DTS:DTSID="{F6BF77C9-3218-4482-909A-621B662D9DCC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_median_age"
-              DTS:DTSID="{41246DA7-7543-4F8A-BAFC-FF45E354027D}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="country_running_agg"
-              DTS:DTSID="{04E4F147-30A1-4D74-97B0-44F531C620D1}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="D:\hurtownie\PROJEKT\corona_rec.csv" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -1338,7 +365,7 @@
       DTS:ObjectName="Wyzdrowiali.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\Wyzdrowiali.sql" />
+          DTS:ConnectionString="D:\hurtownie\PROJEKT\Wyzdrowiali.sql" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -1363,23 +390,6 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Execute Process Task"
-      DTS:CreationName="Microsoft.ExecuteProcess"
-      DTS:Description="Execute Process Task"
-      DTS:DTSID="{3B7945AB-FF5C-4462-B605-03838FE568F3}"
-      DTS:ExecutableType="Microsoft.ExecuteProcess"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Execute Process Task"
-      DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <ExecuteProcessData
-          Executable="C:\Users\domin\Studia\sem 6\HD\PROJEKT\usuwanie.exe"
-          WorkingDirectory="C:\Users\domin\Studia\sem 6\HD\PROJEKT" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
       DTS:refId="Package\Execute SQL Task"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
@@ -1398,21 +408,600 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Wypelnienie CZAS_DIM"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{5BBE44D1-A1EA-4A85-8AB5-A619D30C822D}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:refId="Package\Script Task"
+      DTS:CreationName="Microsoft.ScriptTask"
+      DTS:Description="Script Task"
+      DTS:DTSID="{4E653A22-40A3-422C-A82F-DC18CEB98A0D}"
+      DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Wypelnienie CZAS_DIM"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ObjectName="Script Task"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{2044BD66-2D9B-4CEC-B95E-4964DCCEDE76}"
-          SQLTask:SqlStmtSourceType="FileConnection"
-          SQLTask:SqlStatementSource="Insert_czas_dim.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+        <ScriptProject
+          Name="ST_7aa9878bb087441194bc5bea0748c372"
+          VSTAMajorVersion="15"
+          VSTAMinorVersion="0"
+          Language="CSharp">
+          <ProjectItem
+            Name="Properties\Resources.resx"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_7aa9878bb087441194bc5bea0748c372.Properties.Settings.get_Default():ST_7aa9878bb087441194bc5bea0748c372.Properties.Sett" +
+    "ings")]
+
+namespace ST_7aa9878bb087441194bc5bea0748c372.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="ST_7aa9878bb087441194bc5bea0748c372.csproj"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{003c3e32-c2ca-4006-b054-3d5832a620ad}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ST_7aa9878bb087441194bc5bea0748c372</RootNamespace>
+    <AssemblyName>ST_7aa9878bb087441194bc5bea0748c372</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_ST150</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></ProjectItem>
+          <ProjectItem
+            Name="ScriptMain.cs"
+            Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
+/* The Script Task allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services control flow. 
+ * 
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script task. */
+#endregion
+
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Runtime;
+using System.Windows.Forms;
+#endregion
+
+namespace ST_7aa9878bb087441194bc5bea0748c372
+{
+
+    [Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
+    public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+	{
+
+		public void Main()
+		{
+            try
+            {
+                bool fireAgain = true;
+                Dts.Events.FireInformation(0, "Download File", "Start downloading " + Dts.Connections["HTTP Connection Manager"].
+                    ConnectionString, string.Empty, 0, ref fireAgain);
+
+                Object mySSISConnection = Dts.Connections["HTTP Connection Manager"].AcquireConnection(null);
+                HttpClientConnection myConnection = new HttpClientConnection(mySSISConnection);
+                myConnection.DownloadFile(Dts.Connections["pobrane1.csv"].ConnectionString, true);
+
+
+                Dts.Events.FireInformation(0, "Download File", "Finished downloading " + Dts.Connections["pobrane1.csv"].ConnectionString
+                    , string.Empty, 0, ref fireAgain);
+
+                Dts.TaskResult = (int)ScriptResults.Success;
+            }
+            catch (Exception ex)
+            {
+                Dts.Events.FireError(0, "Download File", "Download failed: " + ex.Message, string.Empty, 0);
+
+                Dts.TaskResult = (int)ScriptResults.Failure;
+            }
+
+            try
+            {
+                bool fireAgain1 = true;
+                Dts.Events.FireInformation(0, "Download File", "Start downloading " + Dts.Connections["HTTP Connection Manager 2"].
+                    ConnectionString, string.Empty, 0, ref fireAgain1);
+
+                Object mySSISConnection1 = Dts.Connections["HTTP Connection Manager 2"].AcquireConnection(null);
+                HttpClientConnection myConnection1 = new HttpClientConnection(mySSISConnection1);
+                myConnection1.DownloadFile(Dts.Connections["pobrane2.csv"].ConnectionString, true);
+
+
+                Dts.Events.FireInformation(0, "Download File", "Finished downloading " + Dts.Connections["pobrane2.csv"].ConnectionString
+                    , string.Empty, 0, ref fireAgain1);
+
+                Dts.TaskResult = (int)ScriptResults.Success;
+            }
+            catch (Exception ex)
+            {
+                Dts.Events.FireError(0, "Download File", "Download failed: " + ex.Message, string.Empty, 0);
+
+                Dts.TaskResult = (int)ScriptResults.Failure;
+            }
+        }
+
+        #region ScriptResults declaration
+        /// <summary>
+        /// This enum provides a convenient shorthand within the scope of this class for setting the
+        /// result of the script.
+        /// 
+        /// This code was generated automatically.
+        /// </summary>
+        enum ScriptResults
+        {
+            Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
+            Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+        };
+        #endregion
+
+	}
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Project"
+            Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>ST_7aa9878bb087441194bc5bea0748c372</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>ST_7aa9878bb087441194bc5bea0748c372</msb:DisplayName>
+    <msb:ProjectId>{5535E007-A98A-4AD7-B893-8608BF54C203}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="ST_7aa9878bb087441194bc5bea0748c372.csproj" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="ScriptMain.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_7aa9878bb087441194bc5bea0748c372")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_7aa9878bb087441194bc5bea0748c372")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Resources.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_7aa9878bb087441194bc5bea0748c372.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_7aa9878bb087441194bc5bea0748c372.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_7aa9878bb087441194bc5bea0748c372.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace ST_7aa9878bb087441194bc5bea0748c372.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_7aa9878bb087441194bc5bea0748c372.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <BinaryItem
+            Name="ST_7aa9878bb087441194bc5bea0748c372.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAM7X614AAAAAAAAAAOAAIiALATAAABIAAAAIAAAAAAAAvjEA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAGwxAABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAxBEAAAAgAAAAEgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAHgEAAAAQAAAAAYAAAAUAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAGgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAACg
+MQAAAAAAAEgAAAACAAUABCMAALANAAABAAAAAAAAALQwAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAABswBwAiAgAAAQAAERcKAigQAAAKbxEAAAoWcgEAAHByHQAA
+cAIoEAAACm8SAAAKckMAAHBvEwAACm8UAAAKKBUAAAp+FgAAChYSAG8XAAAKAigQAAAKbxIAAApy
+QwAAcG8TAAAKFG8YAAAKcxkAAAoCKBAAAApvEgAACnJzAABwbxMAAApvFAAAChdvGgAACgIoEAAA
+Cm8RAAAKFnIBAABwco0AAHACKBAAAApvEgAACnJzAABwbxMAAApvFAAACigVAAAKfhYAAAoWEgBv
+FwAACgIoEAAAChZvGwAACt48CwIoEAAACm8RAAAKFnIBAABwcrkAAHAHbxwAAAooFQAACn4WAAAK
+Fm8dAAAKJgIoEAAAChdvGwAACt4AABcMAigQAAAKbxEAAAoWcgEAAHByHQAAcAIoEAAACm8SAAAK
+ct0AAHBvEwAACm8UAAAKKBUAAAp+FgAAChYSAm8XAAAKAigQAAAKbxIAAApy3QAAcG8TAAAKFG8Y
+AAAKcxkAAAoCKBAAAApvEgAACnIRAQBwbxMAAApvFAAAChdvGgAACgIoEAAACm8RAAAKFnIBAABw
+co0AAHACKBAAAApvEgAACnIRAQBwbxMAAApvFAAACigVAAAKfhYAAAoWEgJvFwAACgIoEAAAChZv
+GwAACt48DQIoEAAACm8RAAAKFnIBAABwcrkAAHAJbxwAAAooFQAACn4WAAAKFm8dAAAKJgIoEAAA
+ChdvGwAACt4AKgAAARwAAAAAAADU1AA8DwAAAQAAEQHU5QE8DwAAAR4CKB4AAAoqHgIoHwAACiqu
+fgEAAAQtHnIrAQBw0AMAAAIoIAAACm8hAAAKcyIAAAqAAQAABH4BAAAEKhp+AgAABCoeAoACAAAE
+Khp+AwAABCoeAigjAAAKKi5zCAAABoADAAAEKgAAQlNKQgEAAQAAAAAADAAAAHY0LjAuMzAzMTkA
+AAAABQBsAAAABAQAACN+AABwBAAA+AUAACNTdHJpbmdzAAAAAGgKAACgAQAAI1VTAAgMAAAQAAAA
+I0dVSUQAAAAYDAAAmAEAACNCbG9iAAAAAAAAAAIAAAFXHaIBCQMAAAD6ATMAFgAAAQAAACEAAAAF
+AAAABgAAAAkAAAABAAAAIwAAAAIAAAAQAAAAAQAAAAIAAAADAAAABAAAAAEAAAAEAAAAAQAAAAEA
+AAAAAIcDAQAAAAAABgA1AsgEBgDEAsgEBgCBAbUEDwA8BQAABgCuARUEBgAYAhUEBgD5ARUEBgCr
+AhUEBgBVAhUEBgBuAhUEBgDFARUEBgDgAegCCgCJAjYDCgAAATYDBgBOBLgDBgC/A7gDBgBkAbUE
+BgDDBbgDBgBoBOgEBgBYBAAEDgA0AXEDDgCVAXEDDgAcAesDBgBJAcgECgBfAzYDCgCKBDYDEgCH
+BasAEgB4BKsABgAQA7gDEgA5BKsABgDLALgDBgB6ALgDBgDpBRUEAAAAACUAAAAAAAEAAQABABAA
+0AMBADkAAQABAAAAEADvBEsFSQABAAMAAAEQAHoFSwVdAAMABwADAQAAowUAAEEABAAKABEAxAOc
+ABEA8ACgABEAXgCkAAYGTQCoAFaAkwWrAFaA0ACrAFAgAAAAAIYA1gMGAAEAnCIAAAAAhhioBAYA
+AQCkIgAAAACDGKgEBgABAKwiAAAAAJMIZASvAAEA2CIAAAAAkwjYALQAAQDfIgAAAACTCOQAuQAB
+AOciAAAAAJYIygW/AAIA7iIAAAAAhhioBAYAAgD2IgAAAACRGK4ExAACAAAAAQDiAgkAqAQBABEA
+qAQGABkAqAQKACkAqAQQADEAqAQQADkAqAQQAEEAqAQQAEkAqAQQAFEAqAQQAFkAqAQQAGEAqAQQ
+AGkAqAQGAIkAqAQGALEAqAQVAMEAqAQGAHEAmwUkAMkAsQUpAMkAgwUuANkArwMzAOEAAgM5AOkA
+vAU9AOkA8gVDANEA2wNGAOEAJwRRAPEAqARWAPEAngBbAMkA1gUBAHkAbgA5ANEAngRhAHEAqAQG
+AJEAqAQGAPkAjABqAPkA5QVyAJkAqAR4ALkAqAQGAAgAFACSAAgAGACXACkAcwD/AC4ACwDXAC4A
+EwDgAC4AGwD/AC4AIwAIAS4AKwAxAS4AMwAxAS4AOwAxAS4AQwAIAS4ASwA3AS4AUwAxAS4AWwBO
+AUMAYwCXAEkAcwD/AGEAewCXAGMAawCXABsAAwABAAQAAwAAAGgEyAAAAPgAzQAAAM4F0gACAAQA
+AwACAAUABQABAAYABQACAAcABwAEgAAAAQAAADIdt6IAAAAAAAABAAAABAAAAAAAAAAAAAAAgABV
+AAAAAAAPAAAAAAAAAAAAAACJABcDAAAAAAQAAAAAAAAAAAAAAIAAuAMAAAAADwAAAAAAAAAAAAAA
+iQAuAAAAAAAAAAAAAQAAAPkEAAAFAAIAAAAAU1RfN2FhOTg3OGJiMDg3NDQxMTk0YmM1YmVhMDc0
+OGMzNzIAPE1vZHVsZT4ATWljcm9zb2Z0LlNxbFNlcnZlci5NYW5hZ2VkRFRTAHZhbHVlX18AbXNj
+b3JsaWIAZGVmYXVsdEluc3RhbmNlAGdldF9NZXNzYWdlAFJ1bnRpbWVUeXBlSGFuZGxlAEdldFR5
+cGVGcm9tSGFuZGxlAERvd25sb2FkRmlsZQBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5SdW50aW1l
+AFR5cGUARmFpbHVyZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1cmUAVlNU
+QVJUU2NyaXB0T2JqZWN0TW9kZWxCYXNlAEFwcGxpY2F0aW9uU2V0dGluZ3NCYXNlAEVkaXRvckJy
+b3dzYWJsZVN0YXRlAENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNv
+ZGVBdHRyaWJ1dGUARGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUA
+QXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRG
+cmFtZXdvcmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5
+RGVzY3JpcHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3Nl
+bWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1Njcmlw
+dFRhc2tFbnRyeVBvaW50QXR0cmlidXRlAEFzc2VtYmx5Q29tcGFueUF0dHJpYnV0ZQBSdW50aW1l
+Q29tcGF0aWJpbGl0eUF0dHJpYnV0ZQB2YWx1ZQBTeXN0ZW0uUnVudGltZS5WZXJzaW9uaW5nAGdl
+dF9Db25uZWN0aW9uU3RyaW5nAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuU2NyaXB0VGFzawBNaWNyb3Nv
+ZnQuU3FsU2VydmVyLkR0cy5UYXNrcy5TY3JpcHRUYXNrAFNjcmlwdE9iamVjdE1vZGVsAFN5c3Rl
+bS5Db21wb25lbnRNb2RlbABTVF83YWE5ODc4YmIwODc0NDExOTRiYzViZWEwNzQ4YzM3Mi5kbGwA
+Z2V0X0l0ZW0AU3lzdGVtAEVudW0AcmVzb3VyY2VNYW4AU2NyaXB0TWFpbgBGaXJlSW5mb3JtYXRp
+b24AU3lzdGVtLkNvbmZpZ3VyYXRpb24AU3lzdGVtLkdsb2JhbGl6YXRpb24AU3lzdGVtLlJlZmxl
+Y3Rpb24AQWNxdWlyZUNvbm5lY3Rpb24ASHR0cENsaWVudENvbm5lY3Rpb24ARXhjZXB0aW9uAEN1
+bHR1cmVJbmZvAGdldF9SZXNvdXJjZU1hbmFnZXIAQ29ubmVjdGlvbk1hbmFnZXIARXZlbnRzT2Jq
+ZWN0V3JhcHBlcgBGaXJlRXJyb3IALmN0b3IALmNjdG9yAFN5c3RlbS5EaWFnbm9zdGljcwBTeXN0
+ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5SZXNvdXJjZXMAU1RfN2FhOTg3OGJi
+MDg3NDQxMTk0YmM1YmVhMDc0OGMzNzIuUHJvcGVydGllcy5SZXNvdXJjZXMucmVzb3VyY2VzAERl
+YnVnZ2luZ01vZGVzAFNUXzdhYTk4NzhiYjA4NzQ0MTE5NGJjNWJlYTA3NDhjMzcyLlByb3BlcnRp
+ZXMAU2V0dGluZ3MAZ2V0X0Nvbm5lY3Rpb25zAFN1Y2Nlc3MAZ2V0X0R0cwBTY3JpcHRSZXN1bHRz
+AGdldF9FdmVudHMAQ29uY2F0AE9iamVjdABnZXRfRGVmYXVsdABzZXRfVGFza1Jlc3VsdABnZXRf
+QXNzZW1ibHkARW1wdHkAABtEAG8AdwBuAGwAbwBhAGQAIABGAGkAbABlAAAlUwB0AGEAcgB0ACAA
+ZABvAHcAbgBsAG8AYQBkAGkAbgBnACAAAC9IAFQAVABQACAAQwBvAG4AbgBlAGMAdABpAG8AbgAg
+AE0AYQBuAGEAZwBlAHIAABlwAG8AYgByAGEAbgBlADEALgBjAHMAdgAAK0YAaQBuAGkAcwBoAGUA
+ZAAgAGQAbwB3AG4AbABvAGEAZABpAG4AZwAgAAAjRABvAHcAbgBsAG8AYQBkACAAZgBhAGkAbABl
+AGQAOgAgAAAzSABUAFQAUAAgAEMAbwBuAG4AZQBjAHQAaQBvAG4AIABNAGEAbgBhAGcAZQByACAA
+MgAAGXAAbwBiAHIAYQBuAGUAMgAuAGMAcwB2AABxUwBUAF8ANwBhAGEAOQA4ADcAOABiAGIAMAA4
+ADcANAA0ADEAMQA5ADQAYgBjADUAYgBlAGEAMAA3ADQAOABjADMANwAyAC4AUAByAG8AcABlAHIA
+dABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAAAABoLXhnX0SJSK7u/vW6FSprAAQgAQEIAyAA
+AQUgAQEREQQgAQEOBSABARFVCAcEAhI9AhI9BCAAEmUEIAASaQQgABJtBSABEnEcAyAADgUAAg4O
+DgIGDgogBgEIDg4OCBACBCABHBwEIAEBHAUgAgEOAgggBQIIDg4OCAcAARJ9EYCBBSAAEoCFByAC
+AQ4SgIUIt3pcVhk04IkIiYRdzYCAzJEEAAAAAAQBAAAAAwYSTQMGElEDBhIQAgYIAwYRFAQAABJN
+BAAAElEFAAEBElEEAAASEAMAAAEECAASTQQIABJRBAgAEhAIAQAIAAAAAAAeAQABAFQCFldyYXBO
+b25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAAKAEAI1NUXzdhYTk4NzhiYjA4NzQ0MTE5NGJjNWJl
+YTA3NDhjMzcyAAAFAQAAAAAWAQARQ29weXJpZ2h0IEAgIDIwMjAAAEkBABouTkVURnJhbWV3b3Jr
+LFZlcnNpb249djQuNwEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUSLk5FVCBGcmFtZXdvcmsgNC43
+tAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2Nvcmxp
+YiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1
+YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAA
+AABQQURQQURQtAAAAJQxAAAAAAAAAAAAAK4xAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgMQAA
+AAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAA
+AEgAAABYQAAAGgQAAAAAAAAAAAAAGgQ0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8A
+AAAAAL0E7/4AAAEAAAABALeiMh0AAAEAt6IyHT8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABE
+AAAAAQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8A
+bgAAAAAAAACwBHoDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAAFYDAAABADAAMAAw
+ADAAMAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEA
+bgB5AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAA
+AAAAUwBUAF8ANwBhAGEAOQA4ADcAOABiAGIAMAA4ADcANAA0ADEAMQA5ADQAYgBjADUAYgBlAGEA
+MAA3ADQAOABjADMANwAyAAAAPgAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAu
+ADcANAA3ADQALgA0ADEANgA1ADUAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAA
+UwBUAF8ANwBhAGEAOQA4ADcAOABiAGIAMAA4ADcANAA0ADEAMQA5ADQAYgBjADUAYgBlAGEAMAA3
+ADQAOABjADMANwAyAC4AZABsAGwAAABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQA
+AABDAG8AcAB5AHIAaQBnAGgAdAAgAEAAIAAgADIAMAAyADAAAAAqAAEAAQBMAGUAZwBhAGwAVABy
+AGEAZABlAG0AYQByAGsAcwAAAAAAAAAAAHgAKAABAE8AcgBpAGcAaQBuAGEAbABGAGkAbABlAG4A
+YQBtAGUAAABTAFQAXwA3AGEAYQA5ADgANwA4AGIAYgAwADgANwA0ADQAMQAxADkANABiAGMANQBi
+AGUAYQAwADcANAA4AGMAMwA3ADIALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0A
+ZQAAAAAAUwBUAF8ANwBhAGEAOQA4ADcAOABiAGIAMAA4ADcANAA0ADEAMQA5ADQAYgBjADUAYgBl
+AGEAMAA3ADQAOABjADMANwAyAAAAQgAPAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAA
+MQAuADAALgA3ADQANwA0AC4ANAAxADYANQA1AAAAAABGAA8AAQBBAHMAcwBlAG0AYgBsAHkAIABW
+AGUAcgBzAGkAbwBuAAAAMQAuADAALgA3ADQANwA0AC4ANAAxADYANQA1AAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAAMAxAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
+        </ScriptProject>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -1434,7 +1023,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="1045"
+              localeId="1033"
               name="Flat File Source 1"
               usesDispositions="true"
               version="1">
@@ -2326,12 +1915,6 @@
                       length="255"
                       name="country_running_agg" />
                     <externalMetadataColumn
-                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[recovered]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="recovered" />
-                    <externalMetadataColumn
                       refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
                       codePage="1250"
                       dataType="str"
@@ -2740,6 +2323,12 @@
                       dataType="str"
                       length="255"
                       name="deaths" />
+                    <externalMetadataColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="id" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2779,384 +2368,15 @@
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Załadowanie geogarfia"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{8DF889FE-C549-4143-8C3B-6D99E233C77A}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Załadowanie geogarfia"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1">
-          <components>
-            <component
-              refId="Package\Załadowanie geogarfia\Flat File Source"
-              componentClassID="Microsoft.FlatFileSource"
-              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Flat File Source"
-              localeId="1045"
-              name="Flat File Source"
-              usesDispositions="true"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
-                  name="FileNameColumnName"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Załadowanie geogarfia\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Load Geografia]"
-                  connectionManagerRefId="Package.ConnectionManagers[Load Geografia]"
-                  name="FlatFileConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output]"
-                  name="Flat File Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Continent]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Continent]"
-                      length="50"
-                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Continent]"
-                      name="Continent"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
-                      length="50"
-                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
-                      name="Country"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Population]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Population]"
-                      length="50"
-                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Population]"
-                      name="Population"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[GDP]"
-                      codePage="1250"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GDP]"
-                      length="50"
-                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[GDP]"
-                      name="GDP"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Continent]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="Continent" />
-                    <externalMetadataColumn
-                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="Country" />
-                    <externalMetadataColumn
-                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Population]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="Population" />
-                    <externalMetadataColumn
-                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GDP]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="GDP" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Error Output]"
-                  isErrorOut="true"
-                  name="Flat File Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      codePage="1250"
-                      dataType="text"
-                      description="Flat File Source Error Output Column"
-                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      name="Flat File Source Error Output Column" />
-                    <outputColumn
-                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Załadowanie geogarfia\OLE DB Destination"
-              componentClassID="Microsoft.OLEDBDestination"
-              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-              description="OLE DB Destination"
-              name="OLE DB Destination"
-              usesDispositions="true"
-              version="4">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[GEOGRAFIA_DIM]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1250</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">3</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                  name="FastLoadMaxInsertCommitSize">2147483647</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Załadowanie geogarfia\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DestinationConnectionOLEDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input]"
-                  errorOrTruncationOperation="Insert"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="OLE DB Destination Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Continent]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Continent"
-                      externalMetadataColumnId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kontynent]"
-                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Continent]" />
-                    <inputColumn
-                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Country]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Country"
-                      externalMetadataColumnId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kraj]"
-                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Country]" />
-                    <inputColumn
-                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Population]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Population"
-                      externalMetadataColumnId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[populacja]"
-                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Population]" />
-                    <inputColumn
-                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[GDP]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="GDP"
-                      externalMetadataColumnId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pkb]"
-                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[GDP]" />
-                  </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kontynent]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="kontynent" />
-                    <externalMetadataColumn
-                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kraj]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="kraj" />
-                    <externalMetadataColumn
-                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[populacja]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="populacja" />
-                    <externalMetadataColumn
-                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pkb]"
-                      codePage="1250"
-                      dataType="str"
-                      length="255"
-                      name="pkb" />
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Załadowanie geogarfia\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Załadowanie geogarfia\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Załadowanie geogarfia\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-          </components>
-          <paths>
-            <path
-              refId="Package\Załadowanie geogarfia.Paths[Flat File Source Output]"
-              endId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input]"
-              name="Flat File Source Output"
-              startId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output]" />
-          </paths>
-        </pipeline>
-      </DTS:ObjectData>
-    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{4E051599-810A-4626-BA8A-3C576D5582A6}"
-      DTS:From="Package\Czyszczenie stage"
+      DTS:DTSID="{BA43BF35-1A00-4C3E-B64E-7043112977DD}"
+      DTS:From="Package\Script Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\Wypelnienie CZAS_DIM" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
-      DTS:CreationName=""
-      DTS:DTSID="{87E8C19F-D2B4-4770-96FB-690C8C784A5B}"
-      DTS:From="Package\Execute Process Task"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 1"
       DTS:To="Package\Czyszczenie stage" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
@@ -3183,30 +2403,6 @@
       DTS:ObjectName="Constraint 4"
       DTS:To="Package\Załadaowanie Corona Stage Recovered" />
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
-      DTS:CreationName=""
-      DTS:DTSID="{AA082471-AA55-42C0-B457-399EDB21E223}"
-      DTS:From="Package\Czyszczenie stage"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 5"
-      DTS:To="Package\Załadowanie geogarfia" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
-      DTS:CreationName=""
-      DTS:DTSID="{887E80BB-BBA6-401A-B5BE-79D61C2DD71E}"
-      DTS:From="Package\Załadowanie geogarfia"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 6"
-      DTS:To="Package\Execute SQL Task" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
-      DTS:CreationName=""
-      DTS:DTSID="{5C55154A-B5ED-421F-8C62-ECACFF2984DB}"
-      DTS:From="Package\Wypelnienie CZAS_DIM"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 7"
-      DTS:To="Package\Execute SQL Task" />
-    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
       DTS:CreationName=""
       DTS:DTSID="{91B5EF7D-5530-4400-9654-7FD094E9A2BD}"
@@ -3230,113 +2426,45 @@
         <NodeLayout
           Size="163,42"
           Id="Package\Czyszczenie stage"
-          TopLeft="534,99" />
-        <NodeLayout
-          Size="180,42"
-          Id="Package\Execute Process Task"
-          TopLeft="526,14" />
+          TopLeft="531,179" />
         <NodeLayout
           Size="163,42"
           Id="Package\Execute SQL Task"
-          TopLeft="528,365" />
-        <NodeLayout
-          Size="189,42"
-          Id="Package\Wypelnienie CZAS_DIM"
-          TopLeft="915,227" />
+          TopLeft="524,466" />
         <NodeLayout
           Size="204,42"
           Id="Package\Zaladowanie Corona Stage"
-          TopLeft="118,224" />
+          TopLeft="273,281" />
         <NodeLayout
           Size="263,42"
           Id="Package\Załadaowanie Corona Stage Recovered"
-          TopLeft="347,225" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Załadowanie geogarfia"
-          TopLeft="645,227" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="662,141">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="347.5,86"
-              Start="0,0"
-              End="347.5,78.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.8369098712446" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.8369098712446"
-                    Point2="0,25.8369098712446"
-                    Point3="4,25.8369098712446" />
-                  <mssgle:LineSegment
-                    End="343.5,25.8369098712446" />
-                  <mssgle:CubicBezierSegment
-                    Point1="343.5,25.8369098712446"
-                    Point2="347.5,25.8369098712446"
-                    Point3="347.5,29.8369098712446" />
-                  <mssgle:LineSegment
-                    End="347.5,78.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="615.75,56">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,43"
-              Start="0,0"
-              End="0,35.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="733,267" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="478.5,267">
+          TopLeft="864.5,309">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="115.5,98"
+              EndConnector="-233.166666666667,157"
               Start="0,0"
-              End="115.5,90.5">
+              End="-233.166666666667,149.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,50.1491525423729" />
+                    End="0,89.2843256379101" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,50.1491525423729"
-                    Point2="0,54.1491525423729"
-                    Point3="4,54.1491525423729" />
+                    Point1="0,89.2843256379101"
+                    Point2="0,93.2843256379101"
+                    Point3="-4,93.2843256379101" />
                   <mssgle:LineSegment
-                    End="111.5,54.1491525423729" />
+                    End="-229.166666666667,93.2843256379101" />
                   <mssgle:CubicBezierSegment
-                    Point1="111.5,54.1491525423729"
-                    Point2="115.5,54.1491525423729"
-                    Point3="115.5,58.1491525423729" />
+                    Point1="-229.166666666667,93.2843256379101"
+                    Point2="-233.166666666667,93.2843256379101"
+                    Point3="-233.166666666667,97.2843256379101" />
                   <mssgle:LineSegment
-                    End="115.5,90.5" />
+                    End="-233.166666666667,149.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3347,30 +2475,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="569,141">
+          TopLeft="586.666666666667,221">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-349,83"
+              EndConnector="-211.666666666667,60"
               Start="0,0"
-              End="-349,75.5">
+              End="-211.666666666667,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.9356223175966" />
+                    End="0,20.3499392466586" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.9356223175966"
-                    Point2="0,24.9356223175966"
-                    Point3="-4,24.9356223175966" />
+                    Point1="0,20.3499392466586"
+                    Point2="0,24.3499392466586"
+                    Point3="-4,24.3499392466586" />
                   <mssgle:LineSegment
-                    End="-345,24.9356223175966" />
+                    End="-207.666666666667,24.3499392466586" />
                   <mssgle:CubicBezierSegment
-                    Point1="-345,24.9356223175966"
-                    Point2="-349,24.9356223175966"
-                    Point3="-349,28.9356223175966" />
+                    Point1="-207.666666666667,24.3499392466586"
+                    Point2="-211.666666666667,24.3499392466586"
+                    Point3="-211.666666666667,28.3499392466586" />
                   <mssgle:LineSegment
-                    End="-349,75.5" />
+                    End="-211.666666666667,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3381,132 +2509,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="600,141">
+          TopLeft="638.333333333333,221">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-121.5,84"
+              EndConnector="226.166666666667,46"
               Start="0,0"
-              End="-121.5,76.5">
+              End="226.166666666667,38.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.5864406779661" />
+                    End="0,14.6682867557716" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,33.5864406779661"
-                    Point2="0,37.5864406779661"
-                    Point3="-4,37.5864406779661" />
+                    Point1="0,14.6682867557716"
+                    Point2="0,18.6682867557716"
+                    Point3="4,18.6682867557716" />
                   <mssgle:LineSegment
-                    End="-117.5,37.5864406779661" />
+                    End="222.166666666667,18.6682867557716" />
                   <mssgle:CubicBezierSegment
-                    Point1="-117.5,37.5864406779661"
-                    Point2="-121.5,37.5864406779661"
-                    Point3="-121.5,41.5864406779661" />
+                    Point1="222.166666666667,18.6682867557716"
+                    Point2="226.166666666667,18.6682867557716"
+                    Point3="226.166666666667,22.6682867557716" />
                   <mssgle:LineSegment
-                    End="-121.5,76.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="631,141">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="107,86"
-              Start="0,0"
-              End="107,78.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.4813559322034" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.4813559322034"
-                    Point2="0,38.4813559322034"
-                    Point3="4,38.4813559322034" />
-                  <mssgle:LineSegment
-                    End="103,38.4813559322034" />
-                  <mssgle:CubicBezierSegment
-                    Point1="103,38.4813559322034"
-                    Point2="107,38.4813559322034"
-                    Point3="107,42.4813559322034" />
-                  <mssgle:LineSegment
-                    End="107,78.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="738,269">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-113,96"
-              Start="0,0"
-              End="-113,88.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,49.0440677966102" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,49.0440677966102"
-                    Point2="0,53.0440677966102"
-                    Point3="-4,53.0440677966102" />
-                  <mssgle:LineSegment
-                    End="-109,53.0440677966102" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-109,53.0440677966102"
-                    Point2="-113,53.0440677966102"
-                    Point3="-113,57.0440677966102" />
-                  <mssgle:LineSegment
-                    End="-113,88.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="1009.5,269">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-353.5,96"
-              Start="0,0"
-              End="-353.5,88.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,63.1587982832618" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,63.1587982832618"
-                    Point2="0,67.1587982832618"
-                    Point3="-4,67.1587982832618" />
-                  <mssgle:LineSegment
-                    End="-349.5,67.1587982832618" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-349.5,67.1587982832618"
-                    Point2="-353.5,67.1587982832618"
-                    Point3="-353.5,71.1587982832618" />
-                  <mssgle:LineSegment
-                    End="-353.5,88.5" />
+                    End="226.166666666667,38.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3517,30 +2543,56 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8]"
-          TopLeft="220,266">
+          TopLeft="375,323">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="343,99"
+              EndConnector="204.666666666667,143"
               Start="0,0"
-              End="343,91.5">
+              End="204.666666666667,135.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,65.2575107296137" />
+                    End="0,80.9659781287971" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,65.2575107296137"
-                    Point2="0,69.2575107296137"
-                    Point3="4,69.2575107296137" />
+                    Point1="0,80.9659781287971"
+                    Point2="0,84.9659781287971"
+                    Point3="4,84.9659781287971" />
                   <mssgle:LineSegment
-                    End="339,69.2575107296137" />
+                    End="200.666666666667,84.9659781287971" />
                   <mssgle:CubicBezierSegment
-                    Point1="339,69.2575107296137"
-                    Point2="343,69.2575107296137"
-                    Point3="343,73.2575107296137" />
+                    Point1="200.666666666667,84.9659781287971"
+                    Point2="204.666666666667,84.9659781287971"
+                    Point3="204.666666666667,88.9659781287971" />
                   <mssgle:LineSegment
-                    End="343,91.5" />
+                    End="204.666666666667,135.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="131,42"
+          Id="Package\Script Task"
+          TopLeft="542,90" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="610,132">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47"
+              Start="0,0"
+              End="0,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3619,7 +2671,7 @@
     design-time-name="Package\Załadaowanie Corona Stage Recovered">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="171,42"
           Id="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination"
@@ -3647,9 +2699,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3657,71 +2707,6 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Załadowanie geogarfia">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Załadowanie geogarfia\OLE DB Destination"
-          TopLeft="296,230" />
-        <NodeLayout
-          Size="151,42"
-          Id="Package\Załadowanie geogarfia\Flat File Source"
-          TopLeft="297,72" />
-        <EdgeLayout
-          Id="Package\Załadowanie geogarfia.Paths[Flat File Source Output]"
-          TopLeft="372.5,114">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="9,116"
-              Start="0,0"
-              End="9,108.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,54" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,54"
-                    Point2="0,58"
-                    Point3="4,58" />
-                  <mssgle:LineSegment
-                    End="5,58" />
-                  <mssgle:CubicBezierSegment
-                    Point1="5,58"
-                    Point2="9,58"
-                    Point3="9,62" />
-                  <mssgle:LineSegment
-                    End="9,108.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Załadowanie geogarfia\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

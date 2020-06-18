@@ -90,7 +90,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-01-22,Jordan,0,0,0
 2020-01-22,Kazakhstan,0,0,0
 2020-01-22,Kenya,0,0,0
-2020-01-22,South Korea,1,0,0
+2020-01-22,"Korea, South",1,0,0
 2020-01-22,Kosovo,0,0,0
 2020-01-22,Kuwait,0,0,0
 2020-01-22,Kyrgyzstan,0,0,0
@@ -278,7 +278,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-01-23,Jordan,0,0,0
 2020-01-23,Kazakhstan,0,0,0
 2020-01-23,Kenya,0,0,0
-2020-01-23,South Korea,1,0,0
+2020-01-23,"Korea, South",1,0,0
 2020-01-23,Kosovo,0,0,0
 2020-01-23,Kuwait,0,0,0
 2020-01-23,Kyrgyzstan,0,0,0
@@ -466,7 +466,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-01-24,Jordan,0,0,0
 2020-01-24,Kazakhstan,0,0,0
 2020-01-24,Kenya,0,0,0
-2020-01-24,South Korea,2,0,0
+2020-01-24,"Korea, South",2,0,0
 2020-01-24,Kosovo,0,0,0
 2020-01-24,Kuwait,0,0,0
 2020-01-24,Kyrgyzstan,0,0,0
@@ -654,7 +654,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-01-25,Jordan,0,0,0
 2020-01-25,Kazakhstan,0,0,0
 2020-01-25,Kenya,0,0,0
-2020-01-25,South Korea,2,0,0
+2020-01-25,"Korea, South",2,0,0
 2020-01-25,Kosovo,0,0,0
 2020-01-25,Kuwait,0,0,0
 2020-01-25,Kyrgyzstan,0,0,0
@@ -842,7 +842,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-01-26,Jordan,0,0,0
 2020-01-26,Kazakhstan,0,0,0
 2020-01-26,Kenya,0,0,0
-2020-01-26,South Korea,3,0,0
+2020-01-26,"Korea, South",3,0,0
 2020-01-26,Kosovo,0,0,0
 2020-01-26,Kuwait,0,0,0
 2020-01-26,Kyrgyzstan,0,0,0
@@ -1030,7 +1030,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-01-27,Jordan,0,0,0
 2020-01-27,Kazakhstan,0,0,0
 2020-01-27,Kenya,0,0,0
-2020-01-27,South Korea,4,0,0
+2020-01-27,"Korea, South",4,0,0
 2020-01-27,Kosovo,0,0,0
 2020-01-27,Kuwait,0,0,0
 2020-01-27,Kyrgyzstan,0,0,0
@@ -1218,7 +1218,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-01-28,Jordan,0,0,0
 2020-01-28,Kazakhstan,0,0,0
 2020-01-28,Kenya,0,0,0
-2020-01-28,South Korea,4,0,0
+2020-01-28,"Korea, South",4,0,0
 2020-01-28,Kosovo,0,0,0
 2020-01-28,Kuwait,0,0,0
 2020-01-28,Kyrgyzstan,0,0,0
@@ -1406,7 +1406,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-01-29,Jordan,0,0,0
 2020-01-29,Kazakhstan,0,0,0
 2020-01-29,Kenya,0,0,0
-2020-01-29,South Korea,4,0,0
+2020-01-29,"Korea, South",4,0,0
 2020-01-29,Kosovo,0,0,0
 2020-01-29,Kuwait,0,0,0
 2020-01-29,Kyrgyzstan,0,0,0
@@ -1594,7 +1594,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-01-30,Jordan,0,0,0
 2020-01-30,Kazakhstan,0,0,0
 2020-01-30,Kenya,0,0,0
-2020-01-30,South Korea,4,0,0
+2020-01-30,"Korea, South",4,0,0
 2020-01-30,Kosovo,0,0,0
 2020-01-30,Kuwait,0,0,0
 2020-01-30,Kyrgyzstan,0,0,0
@@ -1782,7 +1782,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-01-31,Jordan,0,0,0
 2020-01-31,Kazakhstan,0,0,0
 2020-01-31,Kenya,0,0,0
-2020-01-31,South Korea,11,0,0
+2020-01-31,"Korea, South",11,0,0
 2020-01-31,Kosovo,0,0,0
 2020-01-31,Kuwait,0,0,0
 2020-01-31,Kyrgyzstan,0,0,0
@@ -1970,7 +1970,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-01,Jordan,0,0,0
 2020-02-01,Kazakhstan,0,0,0
 2020-02-01,Kenya,0,0,0
-2020-02-01,South Korea,12,0,0
+2020-02-01,"Korea, South",12,0,0
 2020-02-01,Kosovo,0,0,0
 2020-02-01,Kuwait,0,0,0
 2020-02-01,Kyrgyzstan,0,0,0
@@ -2158,7 +2158,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-02,Jordan,0,0,0
 2020-02-02,Kazakhstan,0,0,0
 2020-02-02,Kenya,0,0,0
-2020-02-02,South Korea,15,0,0
+2020-02-02,"Korea, South",15,0,0
 2020-02-02,Kosovo,0,0,0
 2020-02-02,Kuwait,0,0,0
 2020-02-02,Kyrgyzstan,0,0,0
@@ -2346,7 +2346,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-03,Jordan,0,0,0
 2020-02-03,Kazakhstan,0,0,0
 2020-02-03,Kenya,0,0,0
-2020-02-03,South Korea,15,0,0
+2020-02-03,"Korea, South",15,0,0
 2020-02-03,Kosovo,0,0,0
 2020-02-03,Kuwait,0,0,0
 2020-02-03,Kyrgyzstan,0,0,0
@@ -2534,7 +2534,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-04,Jordan,0,0,0
 2020-02-04,Kazakhstan,0,0,0
 2020-02-04,Kenya,0,0,0
-2020-02-04,South Korea,16,0,0
+2020-02-04,"Korea, South",16,0,0
 2020-02-04,Kosovo,0,0,0
 2020-02-04,Kuwait,0,0,0
 2020-02-04,Kyrgyzstan,0,0,0
@@ -2722,7 +2722,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-05,Jordan,0,0,0
 2020-02-05,Kazakhstan,0,0,0
 2020-02-05,Kenya,0,0,0
-2020-02-05,South Korea,19,0,0
+2020-02-05,"Korea, South",19,0,0
 2020-02-05,Kosovo,0,0,0
 2020-02-05,Kuwait,0,0,0
 2020-02-05,Kyrgyzstan,0,0,0
@@ -2910,7 +2910,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-06,Jordan,0,0,0
 2020-02-06,Kazakhstan,0,0,0
 2020-02-06,Kenya,0,0,0
-2020-02-06,South Korea,23,0,0
+2020-02-06,"Korea, South",23,0,0
 2020-02-06,Kosovo,0,0,0
 2020-02-06,Kuwait,0,0,0
 2020-02-06,Kyrgyzstan,0,0,0
@@ -3098,7 +3098,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-07,Jordan,0,0,0
 2020-02-07,Kazakhstan,0,0,0
 2020-02-07,Kenya,0,0,0
-2020-02-07,South Korea,24,1,0
+2020-02-07,"Korea, South",24,1,0
 2020-02-07,Kosovo,0,0,0
 2020-02-07,Kuwait,0,0,0
 2020-02-07,Kyrgyzstan,0,0,0
@@ -3286,7 +3286,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-08,Jordan,0,0,0
 2020-02-08,Kazakhstan,0,0,0
 2020-02-08,Kenya,0,0,0
-2020-02-08,South Korea,24,1,0
+2020-02-08,"Korea, South",24,1,0
 2020-02-08,Kosovo,0,0,0
 2020-02-08,Kuwait,0,0,0
 2020-02-08,Kyrgyzstan,0,0,0
@@ -3474,7 +3474,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-09,Jordan,0,0,0
 2020-02-09,Kazakhstan,0,0,0
 2020-02-09,Kenya,0,0,0
-2020-02-09,South Korea,25,3,0
+2020-02-09,"Korea, South",25,3,0
 2020-02-09,Kosovo,0,0,0
 2020-02-09,Kuwait,0,0,0
 2020-02-09,Kyrgyzstan,0,0,0
@@ -3662,7 +3662,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-10,Jordan,0,0,0
 2020-02-10,Kazakhstan,0,0,0
 2020-02-10,Kenya,0,0,0
-2020-02-10,South Korea,27,3,0
+2020-02-10,"Korea, South",27,3,0
 2020-02-10,Kosovo,0,0,0
 2020-02-10,Kuwait,0,0,0
 2020-02-10,Kyrgyzstan,0,0,0
@@ -3850,7 +3850,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-11,Jordan,0,0,0
 2020-02-11,Kazakhstan,0,0,0
 2020-02-11,Kenya,0,0,0
-2020-02-11,South Korea,28,3,0
+2020-02-11,"Korea, South",28,3,0
 2020-02-11,Kosovo,0,0,0
 2020-02-11,Kuwait,0,0,0
 2020-02-11,Kyrgyzstan,0,0,0
@@ -4038,7 +4038,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-12,Jordan,0,0,0
 2020-02-12,Kazakhstan,0,0,0
 2020-02-12,Kenya,0,0,0
-2020-02-12,South Korea,28,7,0
+2020-02-12,"Korea, South",28,7,0
 2020-02-12,Kosovo,0,0,0
 2020-02-12,Kuwait,0,0,0
 2020-02-12,Kyrgyzstan,0,0,0
@@ -4226,7 +4226,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-13,Jordan,0,0,0
 2020-02-13,Kazakhstan,0,0,0
 2020-02-13,Kenya,0,0,0
-2020-02-13,South Korea,28,7,0
+2020-02-13,"Korea, South",28,7,0
 2020-02-13,Kosovo,0,0,0
 2020-02-13,Kuwait,0,0,0
 2020-02-13,Kyrgyzstan,0,0,0
@@ -4414,7 +4414,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-14,Jordan,0,0,0
 2020-02-14,Kazakhstan,0,0,0
 2020-02-14,Kenya,0,0,0
-2020-02-14,South Korea,28,7,0
+2020-02-14,"Korea, South",28,7,0
 2020-02-14,Kosovo,0,0,0
 2020-02-14,Kuwait,0,0,0
 2020-02-14,Kyrgyzstan,0,0,0
@@ -4602,7 +4602,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-15,Jordan,0,0,0
 2020-02-15,Kazakhstan,0,0,0
 2020-02-15,Kenya,0,0,0
-2020-02-15,South Korea,28,9,0
+2020-02-15,"Korea, South",28,9,0
 2020-02-15,Kosovo,0,0,0
 2020-02-15,Kuwait,0,0,0
 2020-02-15,Kyrgyzstan,0,0,0
@@ -4790,7 +4790,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-16,Jordan,0,0,0
 2020-02-16,Kazakhstan,0,0,0
 2020-02-16,Kenya,0,0,0
-2020-02-16,South Korea,29,9,0
+2020-02-16,"Korea, South",29,9,0
 2020-02-16,Kosovo,0,0,0
 2020-02-16,Kuwait,0,0,0
 2020-02-16,Kyrgyzstan,0,0,0
@@ -4978,7 +4978,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-17,Jordan,0,0,0
 2020-02-17,Kazakhstan,0,0,0
 2020-02-17,Kenya,0,0,0
-2020-02-17,South Korea,30,10,0
+2020-02-17,"Korea, South",30,10,0
 2020-02-17,Kosovo,0,0,0
 2020-02-17,Kuwait,0,0,0
 2020-02-17,Kyrgyzstan,0,0,0
@@ -5166,7 +5166,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-18,Jordan,0,0,0
 2020-02-18,Kazakhstan,0,0,0
 2020-02-18,Kenya,0,0,0
-2020-02-18,South Korea,31,12,0
+2020-02-18,"Korea, South",31,12,0
 2020-02-18,Kosovo,0,0,0
 2020-02-18,Kuwait,0,0,0
 2020-02-18,Kyrgyzstan,0,0,0
@@ -5354,7 +5354,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-19,Jordan,0,0,0
 2020-02-19,Kazakhstan,0,0,0
 2020-02-19,Kenya,0,0,0
-2020-02-19,South Korea,31,12,0
+2020-02-19,"Korea, South",31,12,0
 2020-02-19,Kosovo,0,0,0
 2020-02-19,Kuwait,0,0,0
 2020-02-19,Kyrgyzstan,0,0,0
@@ -5542,7 +5542,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-20,Jordan,0,0,0
 2020-02-20,Kazakhstan,0,0,0
 2020-02-20,Kenya,0,0,0
-2020-02-20,South Korea,104,16,1
+2020-02-20,"Korea, South",104,16,1
 2020-02-20,Kosovo,0,0,0
 2020-02-20,Kuwait,0,0,0
 2020-02-20,Kyrgyzstan,0,0,0
@@ -5730,7 +5730,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-21,Jordan,0,0,0
 2020-02-21,Kazakhstan,0,0,0
 2020-02-21,Kenya,0,0,0
-2020-02-21,South Korea,204,16,2
+2020-02-21,"Korea, South",204,16,2
 2020-02-21,Kosovo,0,0,0
 2020-02-21,Kuwait,0,0,0
 2020-02-21,Kyrgyzstan,0,0,0
@@ -5918,7 +5918,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-22,Jordan,0,0,0
 2020-02-22,Kazakhstan,0,0,0
 2020-02-22,Kenya,0,0,0
-2020-02-22,South Korea,433,16,2
+2020-02-22,"Korea, South",433,16,2
 2020-02-22,Kosovo,0,0,0
 2020-02-22,Kuwait,0,0,0
 2020-02-22,Kyrgyzstan,0,0,0
@@ -6106,7 +6106,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-23,Jordan,0,0,0
 2020-02-23,Kazakhstan,0,0,0
 2020-02-23,Kenya,0,0,0
-2020-02-23,South Korea,602,18,6
+2020-02-23,"Korea, South",602,18,6
 2020-02-23,Kosovo,0,0,0
 2020-02-23,Kuwait,0,0,0
 2020-02-23,Kyrgyzstan,0,0,0
@@ -6294,7 +6294,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-24,Jordan,0,0,0
 2020-02-24,Kazakhstan,0,0,0
 2020-02-24,Kenya,0,0,0
-2020-02-24,South Korea,833,18,8
+2020-02-24,"Korea, South",833,18,8
 2020-02-24,Kosovo,0,0,0
 2020-02-24,Kuwait,1,0,0
 2020-02-24,Kyrgyzstan,0,0,0
@@ -6482,7 +6482,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-25,Jordan,0,0,0
 2020-02-25,Kazakhstan,0,0,0
 2020-02-25,Kenya,0,0,0
-2020-02-25,South Korea,977,22,10
+2020-02-25,"Korea, South",977,22,10
 2020-02-25,Kosovo,0,0,0
 2020-02-25,Kuwait,11,0,0
 2020-02-25,Kyrgyzstan,0,0,0
@@ -6670,7 +6670,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-26,Jordan,0,0,0
 2020-02-26,Kazakhstan,0,0,0
 2020-02-26,Kenya,0,0,0
-2020-02-26,South Korea,1261,22,12
+2020-02-26,"Korea, South",1261,22,12
 2020-02-26,Kosovo,0,0,0
 2020-02-26,Kuwait,26,0,0
 2020-02-26,Kyrgyzstan,0,0,0
@@ -6858,7 +6858,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-27,Jordan,0,0,0
 2020-02-27,Kazakhstan,0,0,0
 2020-02-27,Kenya,0,0,0
-2020-02-27,South Korea,1766,22,13
+2020-02-27,"Korea, South",1766,22,13
 2020-02-27,Kosovo,0,0,0
 2020-02-27,Kuwait,43,0,0
 2020-02-27,Kyrgyzstan,0,0,0
@@ -7046,7 +7046,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-28,Jordan,0,0,0
 2020-02-28,Kazakhstan,0,0,0
 2020-02-28,Kenya,0,0,0
-2020-02-28,South Korea,2337,22,13
+2020-02-28,"Korea, South",2337,22,13
 2020-02-28,Kosovo,0,0,0
 2020-02-28,Kuwait,45,0,0
 2020-02-28,Kyrgyzstan,0,0,0
@@ -7234,7 +7234,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-02-29,Jordan,0,0,0
 2020-02-29,Kazakhstan,0,0,0
 2020-02-29,Kenya,0,0,0
-2020-02-29,South Korea,3150,27,16
+2020-02-29,"Korea, South",3150,27,16
 2020-02-29,Kosovo,0,0,0
 2020-02-29,Kuwait,45,0,0
 2020-02-29,Kyrgyzstan,0,0,0
@@ -7422,7 +7422,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-01,Jordan,0,0,0
 2020-03-01,Kazakhstan,0,0,0
 2020-03-01,Kenya,0,0,0
-2020-03-01,South Korea,3736,30,17
+2020-03-01,"Korea, South",3736,30,17
 2020-03-01,Kosovo,0,0,0
 2020-03-01,Kuwait,45,0,0
 2020-03-01,Kyrgyzstan,0,0,0
@@ -7610,7 +7610,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-02,Jordan,0,0,0
 2020-03-02,Kazakhstan,0,0,0
 2020-03-02,Kenya,0,0,0
-2020-03-02,South Korea,4335,30,28
+2020-03-02,"Korea, South",4335,30,28
 2020-03-02,Kosovo,0,0,0
 2020-03-02,Kuwait,56,0,0
 2020-03-02,Kyrgyzstan,0,0,0
@@ -7798,7 +7798,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-03,Jordan,1,0,0
 2020-03-03,Kazakhstan,0,0,0
 2020-03-03,Kenya,0,0,0
-2020-03-03,South Korea,5186,30,28
+2020-03-03,"Korea, South",5186,30,28
 2020-03-03,Kosovo,0,0,0
 2020-03-03,Kuwait,56,0,0
 2020-03-03,Kyrgyzstan,0,0,0
@@ -7986,7 +7986,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-04,Jordan,1,0,0
 2020-03-04,Kazakhstan,0,0,0
 2020-03-04,Kenya,0,0,0
-2020-03-04,South Korea,5621,41,35
+2020-03-04,"Korea, South",5621,41,35
 2020-03-04,Kosovo,0,0,0
 2020-03-04,Kuwait,56,0,0
 2020-03-04,Kyrgyzstan,0,0,0
@@ -8174,7 +8174,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-05,Jordan,1,0,0
 2020-03-05,Kazakhstan,0,0,0
 2020-03-05,Kenya,0,0,0
-2020-03-05,South Korea,6088,41,35
+2020-03-05,"Korea, South",6088,41,35
 2020-03-05,Kosovo,0,0,0
 2020-03-05,Kuwait,58,0,0
 2020-03-05,Kyrgyzstan,0,0,0
@@ -8362,7 +8362,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-06,Jordan,1,0,0
 2020-03-06,Kazakhstan,0,0,0
 2020-03-06,Kenya,0,0,0
-2020-03-06,South Korea,6593,135,42
+2020-03-06,"Korea, South",6593,135,42
 2020-03-06,Kosovo,0,0,0
 2020-03-06,Kuwait,58,0,0
 2020-03-06,Kyrgyzstan,0,0,0
@@ -8550,7 +8550,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-07,Jordan,1,0,0
 2020-03-07,Kazakhstan,0,0,0
 2020-03-07,Kenya,0,0,0
-2020-03-07,South Korea,7041,135,44
+2020-03-07,"Korea, South",7041,135,44
 2020-03-07,Kosovo,0,0,0
 2020-03-07,Kuwait,61,0,0
 2020-03-07,Kyrgyzstan,0,0,0
@@ -8738,7 +8738,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-08,Jordan,1,0,0
 2020-03-08,Kazakhstan,0,0,0
 2020-03-08,Kenya,0,0,0
-2020-03-08,South Korea,7314,118,50
+2020-03-08,"Korea, South",7314,118,50
 2020-03-08,Kosovo,0,0,0
 2020-03-08,Kuwait,64,1,0
 2020-03-08,Kyrgyzstan,0,0,0
@@ -8926,7 +8926,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-09,Jordan,1,0,0
 2020-03-09,Kazakhstan,0,0,0
 2020-03-09,Kenya,0,0,0
-2020-03-09,South Korea,7478,118,53
+2020-03-09,"Korea, South",7478,118,53
 2020-03-09,Kosovo,0,0,0
 2020-03-09,Kuwait,64,1,0
 2020-03-09,Kyrgyzstan,0,0,0
@@ -9114,7 +9114,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-10,Jordan,1,0,0
 2020-03-10,Kazakhstan,0,0,0
 2020-03-10,Kenya,0,0,0
-2020-03-10,South Korea,7513,247,54
+2020-03-10,"Korea, South",7513,247,54
 2020-03-10,Kosovo,0,0,0
 2020-03-10,Kuwait,69,1,0
 2020-03-10,Kyrgyzstan,0,0,0
@@ -9302,7 +9302,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-11,Jordan,1,0,0
 2020-03-11,Kazakhstan,0,0,0
 2020-03-11,Kenya,0,0,0
-2020-03-11,South Korea,7755,288,60
+2020-03-11,"Korea, South",7755,288,60
 2020-03-11,Kosovo,0,0,0
 2020-03-11,Kuwait,72,2,0
 2020-03-11,Kyrgyzstan,0,0,0
@@ -9490,7 +9490,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-12,Jordan,1,0,0
 2020-03-12,Kazakhstan,0,0,0
 2020-03-12,Kenya,0,0,0
-2020-03-12,South Korea,7869,333,66
+2020-03-12,"Korea, South",7869,333,66
 2020-03-12,Kosovo,0,0,0
 2020-03-12,Kuwait,80,5,0
 2020-03-12,Kyrgyzstan,0,0,0
@@ -9678,7 +9678,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-13,Jordan,1,1,0
 2020-03-13,Kazakhstan,4,0,0
 2020-03-13,Kenya,1,0,0
-2020-03-13,South Korea,7979,510,66
+2020-03-13,"Korea, South",7979,510,66
 2020-03-13,Kosovo,0,0,0
 2020-03-13,Kuwait,80,5,0
 2020-03-13,Kyrgyzstan,0,0,0
@@ -9866,7 +9866,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-14,Jordan,1,1,0
 2020-03-14,Kazakhstan,6,0,0
 2020-03-14,Kenya,1,0,0
-2020-03-14,South Korea,8086,510,72
+2020-03-14,"Korea, South",8086,510,72
 2020-03-14,Kosovo,0,0,0
 2020-03-14,Kuwait,104,5,0
 2020-03-14,Kyrgyzstan,0,0,0
@@ -10054,7 +10054,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-15,Jordan,8,1,0
 2020-03-15,Kazakhstan,9,0,0
 2020-03-15,Kenya,3,0,0
-2020-03-15,South Korea,8162,510,75
+2020-03-15,"Korea, South",8162,510,75
 2020-03-15,Kosovo,0,0,0
 2020-03-15,Kuwait,112,5,0
 2020-03-15,Kyrgyzstan,0,0,0
@@ -10242,7 +10242,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-16,Jordan,17,1,0
 2020-03-16,Kazakhstan,10,0,0
 2020-03-16,Kenya,3,0,0
-2020-03-16,South Korea,8236,1137,75
+2020-03-16,"Korea, South",8236,1137,75
 2020-03-16,Kosovo,0,0,0
 2020-03-16,Kuwait,123,9,0
 2020-03-16,Kyrgyzstan,0,0,0
@@ -10430,7 +10430,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-17,Jordan,34,1,0
 2020-03-17,Kazakhstan,33,0,0
 2020-03-17,Kenya,3,0,0
-2020-03-17,South Korea,8320,1407,81
+2020-03-17,"Korea, South",8320,1407,81
 2020-03-17,Kosovo,0,0,0
 2020-03-17,Kuwait,130,9,0
 2020-03-17,Kyrgyzstan,0,0,0
@@ -10618,7 +10618,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-18,Jordan,52,1,0
 2020-03-18,Kazakhstan,35,0,0
 2020-03-18,Kenya,3,0,0
-2020-03-18,South Korea,8413,1540,84
+2020-03-18,"Korea, South",8413,1540,84
 2020-03-18,Kosovo,0,0,0
 2020-03-18,Kuwait,142,15,0
 2020-03-18,Kyrgyzstan,3,0,0
@@ -10806,7 +10806,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-19,Jordan,69,1,0
 2020-03-19,Kazakhstan,44,0,0
 2020-03-19,Kenya,7,0,0
-2020-03-19,South Korea,8565,1540,91
+2020-03-19,"Korea, South",8565,1540,91
 2020-03-19,Kosovo,0,0,0
 2020-03-19,Kuwait,148,18,0
 2020-03-19,Kyrgyzstan,3,0,0
@@ -10994,7 +10994,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-20,Jordan,85,1,0
 2020-03-20,Kazakhstan,49,0,3
 2020-03-20,Kenya,7,0,0
-2020-03-20,South Korea,8652,1540,94
+2020-03-20,"Korea, South",8652,1540,94
 2020-03-20,Kosovo,0,0,0
 2020-03-20,Kuwait,159,18,0
 2020-03-20,Kyrgyzstan,6,0,0
@@ -11182,7 +11182,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-21,Jordan,85,1,0
 2020-03-21,Kazakhstan,53,0,0
 2020-03-21,Kenya,7,0,0
-2020-03-21,South Korea,8799,1540,102
+2020-03-21,"Korea, South",8799,1540,102
 2020-03-21,Kosovo,0,0,0
 2020-03-21,Kuwait,176,27,0
 2020-03-21,Kyrgyzstan,14,0,0
@@ -11370,7 +11370,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-22,Jordan,112,1,0
 2020-03-22,Kazakhstan,60,0,0
 2020-03-22,Kenya,15,0,0
-2020-03-22,South Korea,8961,2909,111
+2020-03-22,"Korea, South",8961,2909,111
 2020-03-22,Kosovo,0,0,0
 2020-03-22,Kuwait,188,27,0
 2020-03-22,Kyrgyzstan,14,0,0
@@ -11558,7 +11558,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-23,Jordan,127,1,0
 2020-03-23,Kazakhstan,62,0,0
 2020-03-23,Kenya,16,0,0
-2020-03-23,South Korea,8961,2909,111
+2020-03-23,"Korea, South",8961,2909,111
 2020-03-23,Kosovo,0,0,0
 2020-03-23,Kuwait,189,27,0
 2020-03-23,Kyrgyzstan,16,0,0
@@ -11746,7 +11746,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-24,Jordan,154,1,0
 2020-03-24,Kazakhstan,72,0,0
 2020-03-24,Kenya,25,0,0
-2020-03-24,South Korea,9037,3507,120
+2020-03-24,"Korea, South",9037,3507,120
 2020-03-24,Kosovo,0,0,0
 2020-03-24,Kuwait,191,39,0
 2020-03-24,Kyrgyzstan,42,0,0
@@ -11934,7 +11934,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-25,Jordan,172,1,0
 2020-03-25,Kazakhstan,81,0,0
 2020-03-25,Kenya,28,1,0
-2020-03-25,South Korea,9137,3730,126
+2020-03-25,"Korea, South",9137,3730,126
 2020-03-25,Kosovo,0,0,0
 2020-03-25,Kuwait,195,43,0
 2020-03-25,Kyrgyzstan,44,0,0
@@ -12122,7 +12122,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-26,Jordan,212,1,0
 2020-03-26,Kazakhstan,111,2,1
 2020-03-26,Kenya,31,1,1
-2020-03-26,South Korea,9241,4144,131
+2020-03-26,"Korea, South",9241,4144,131
 2020-03-26,Kosovo,71,0,1
 2020-03-26,Kuwait,208,49,0
 2020-03-26,Kyrgyzstan,44,0,0
@@ -12310,7 +12310,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-27,Jordan,235,18,1
 2020-03-27,Kazakhstan,150,3,1
 2020-03-27,Kenya,31,1,1
-2020-03-27,South Korea,9332,4528,139
+2020-03-27,"Korea, South",9332,4528,139
 2020-03-27,Kosovo,86,1,1
 2020-03-27,Kuwait,225,57,0
 2020-03-27,Kyrgyzstan,58,0,0
@@ -12498,7 +12498,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-28,Jordan,246,18,1
 2020-03-28,Kazakhstan,228,16,1
 2020-03-28,Kenya,38,1,1
-2020-03-28,South Korea,9478,4811,144
+2020-03-28,"Korea, South",9478,4811,144
 2020-03-28,Kosovo,91,1,1
 2020-03-28,Kuwait,235,64,0
 2020-03-28,Kyrgyzstan,58,0,0
@@ -12686,7 +12686,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-29,Jordan,259,18,3
 2020-03-29,Kazakhstan,284,20,1
 2020-03-29,Kenya,42,1,1
-2020-03-29,South Korea,9583,5033,152
+2020-03-29,"Korea, South",9583,5033,152
 2020-03-29,Kosovo,94,1,1
 2020-03-29,Kuwait,255,67,0
 2020-03-29,Kyrgyzstan,84,0,0
@@ -12874,7 +12874,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-30,Jordan,268,26,5
 2020-03-30,Kazakhstan,302,21,1
 2020-03-30,Kenya,50,1,1
-2020-03-30,South Korea,9661,5228,158
+2020-03-30,"Korea, South",9661,5228,158
 2020-03-30,Kosovo,94,1,1
 2020-03-30,Kuwait,266,72,0
 2020-03-30,Kyrgyzstan,94,3,0
@@ -13062,7 +13062,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-03-31,Jordan,274,30,5
 2020-03-31,Kazakhstan,343,24,2
 2020-03-31,Kenya,59,1,1
-2020-03-31,South Korea,9786,5408,162
+2020-03-31,"Korea, South",9786,5408,162
 2020-03-31,Kosovo,112,6,1
 2020-03-31,Kuwait,289,73,0
 2020-03-31,Kyrgyzstan,107,3,0
@@ -13250,7 +13250,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-01,Jordan,278,36,5
 2020-04-01,Kazakhstan,380,26,3
 2020-04-01,Kenya,81,3,1
-2020-04-01,South Korea,9887,5567,165
+2020-04-01,"Korea, South",9887,5567,165
 2020-04-01,Kosovo,125,10,1
 2020-04-01,Kuwait,317,80,0
 2020-04-01,Kyrgyzstan,111,3,0
@@ -13438,7 +13438,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-02,Jordan,299,45,5
 2020-04-02,Kazakhstan,435,27,3
 2020-04-02,Kenya,110,4,3
-2020-04-02,South Korea,9976,5828,169
+2020-04-02,"Korea, South",9976,5828,169
 2020-04-02,Kosovo,125,10,1
 2020-04-02,Kuwait,342,81,0
 2020-04-02,Kyrgyzstan,116,5,0
@@ -13626,7 +13626,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-03,Jordan,310,58,5
 2020-04-03,Kazakhstan,464,29,6
 2020-04-03,Kenya,122,4,4
-2020-04-03,South Korea,10062,6021,174
+2020-04-03,"Korea, South",10062,6021,174
 2020-04-03,Kosovo,126,10,1
 2020-04-03,Kuwait,417,82,0
 2020-04-03,Kyrgyzstan,130,6,1
@@ -13814,7 +13814,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-04,Jordan,323,74,5
 2020-04-04,Kazakhstan,531,36,5
 2020-04-04,Kenya,126,4,4
-2020-04-04,South Korea,10156,6325,177
+2020-04-04,"Korea, South",10156,6325,177
 2020-04-04,Kosovo,135,16,1
 2020-04-04,Kuwait,479,93,1
 2020-04-04,Kyrgyzstan,144,9,1
@@ -14002,7 +14002,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-05,Jordan,345,110,5
 2020-04-05,Kazakhstan,584,42,6
 2020-04-05,Kenya,142,4,4
-2020-04-05,South Korea,10237,6463,183
+2020-04-05,"Korea, South",10237,6463,183
 2020-04-05,Kosovo,145,23,1
 2020-04-05,Kuwait,556,99,1
 2020-04-05,Kyrgyzstan,147,9,1
@@ -14190,7 +14190,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-06,Jordan,349,126,6
 2020-04-06,Kazakhstan,662,46,6
 2020-04-06,Kenya,158,4,6
-2020-04-06,South Korea,10284,6598,186
+2020-04-06,"Korea, South",10284,6598,186
 2020-04-06,Kosovo,145,23,1
 2020-04-06,Kuwait,665,103,1
 2020-04-06,Kyrgyzstan,216,33,4
@@ -14378,7 +14378,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-07,Jordan,353,138,6
 2020-04-07,Kazakhstan,697,51,6
 2020-04-07,Kenya,172,7,6
-2020-04-07,South Korea,10331,6694,192
+2020-04-07,"Korea, South",10331,6694,192
 2020-04-07,Kosovo,170,24,4
 2020-04-07,Kuwait,743,105,1
 2020-04-07,Kyrgyzstan,228,33,4
@@ -14566,7 +14566,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-08,Jordan,358,150,6
 2020-04-08,Kazakhstan,727,54,7
 2020-04-08,Kenya,179,9,6
-2020-04-08,South Korea,10384,6776,200
+2020-04-08,"Korea, South",10384,6776,200
 2020-04-08,Kosovo,184,30,5
 2020-04-08,Kuwait,855,111,1
 2020-04-08,Kyrgyzstan,270,33,4
@@ -14754,7 +14754,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-09,Jordan,372,161,7
 2020-04-09,Kazakhstan,781,60,8
 2020-04-09,Kenya,184,12,7
-2020-04-09,South Korea,10423,6973,204
+2020-04-09,"Korea, South",10423,6973,204
 2020-04-09,Kosovo,184,30,5
 2020-04-09,Kuwait,910,111,1
 2020-04-09,Kyrgyzstan,280,35,4
@@ -14942,7 +14942,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-10,Jordan,372,170,7
 2020-04-10,Kazakhstan,812,64,10
 2020-04-10,Kenya,189,22,7
-2020-04-10,South Korea,10450,7117,208
+2020-04-10,"Korea, South",10450,7117,208
 2020-04-10,Kosovo,250,52,7
 2020-04-10,Kuwait,993,123,1
 2020-04-10,Kyrgyzstan,298,35,5
@@ -15130,7 +15130,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-11,Jordan,381,177,7
 2020-04-11,Kazakhstan,865,81,10
 2020-04-11,Kenya,191,24,7
-2020-04-11,South Korea,10480,7243,211
+2020-04-11,"Korea, South",10480,7243,211
 2020-04-11,Kosovo,283,58,7
 2020-04-11,Kuwait,1154,133,1
 2020-04-11,Kyrgyzstan,339,44,5
@@ -15318,7 +15318,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-12,Jordan,389,201,7
 2020-04-12,Kazakhstan,951,99,10
 2020-04-12,Kenya,197,25,8
-2020-04-12,South Korea,10512,7368,214
+2020-04-12,"Korea, South",10512,7368,214
 2020-04-12,Kosovo,283,58,7
 2020-04-12,Kuwait,1234,142,1
 2020-04-12,Kyrgyzstan,377,54,5
@@ -15506,7 +15506,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-13,Jordan,391,215,7
 2020-04-13,Kazakhstan,1091,138,12
 2020-04-13,Kenya,208,40,9
-2020-04-13,South Korea,10537,7447,217
+2020-04-13,"Korea, South",10537,7447,217
 2020-04-13,Kosovo,283,58,7
 2020-04-13,Kuwait,1300,150,2
 2020-04-13,Kyrgyzstan,419,67,5
@@ -15694,7 +15694,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-14,Jordan,397,235,7
 2020-04-14,Kazakhstan,1232,203,14
 2020-04-14,Kenya,216,41,9
-2020-04-14,South Korea,10564,7534,222
+2020-04-14,"Korea, South",10564,7534,222
 2020-04-14,Kosovo,387,66,8
 2020-04-14,Kuwait,1355,176,3
 2020-04-14,Kyrgyzstan,430,71,5
@@ -15882,7 +15882,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-15,Jordan,401,250,7
 2020-04-15,Kazakhstan,1295,240,16
 2020-04-15,Kenya,225,53,10
-2020-04-15,South Korea,10591,7616,225
+2020-04-15,"Korea, South",10591,7616,225
 2020-04-15,Kosovo,387,66,8
 2020-04-15,Kuwait,1405,206,3
 2020-04-15,Kyrgyzstan,449,78,5
@@ -16070,7 +16070,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-16,Jordan,402,259,7
 2020-04-16,Kazakhstan,1402,277,17
 2020-04-16,Kenya,234,53,11
-2020-04-16,South Korea,10613,7757,229
+2020-04-16,"Korea, South",10613,7757,229
 2020-04-16,Kosovo,449,79,11
 2020-04-16,Kuwait,1524,225,3
 2020-04-16,Kyrgyzstan,466,91,5
@@ -16258,7 +16258,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-17,Jordan,407,265,7
 2020-04-17,Kazakhstan,1546,347,17
 2020-04-17,Kenya,246,53,11
-2020-04-17,South Korea,10635,7829,230
+2020-04-17,"Korea, South",10635,7829,230
 2020-04-17,Kosovo,480,84,12
 2020-04-17,Kuwait,1658,258,5
 2020-04-17,Kyrgyzstan,489,114,5
@@ -16446,7 +16446,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-18,Jordan,413,269,7
 2020-04-18,Kazakhstan,1615,377,17
 2020-04-18,Kenya,262,60,12
-2020-04-18,South Korea,10653,7937,232
+2020-04-18,"Korea, South",10653,7937,232
 2020-04-18,Kosovo,510,93,12
 2020-04-18,Kuwait,1751,280,6
 2020-04-18,Kyrgyzstan,506,130,5
@@ -16634,7 +16634,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-19,Jordan,417,276,7
 2020-04-19,Kazakhstan,1676,400,17
 2020-04-19,Kenya,270,67,14
-2020-04-19,South Korea,10661,8042,234
+2020-04-19,"Korea, South",10661,8042,234
 2020-04-19,Kosovo,561,102,12
 2020-04-19,Kuwait,1915,305,7
 2020-04-19,Kyrgyzstan,554,133,5
@@ -16822,7 +16822,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-20,Jordan,425,282,7
 2020-04-20,Kazakhstan,1852,447,19
 2020-04-20,Kenya,281,69,14
-2020-04-20,South Korea,10674,8114,236
+2020-04-20,"Korea, South",10674,8114,236
 2020-04-20,Kosovo,598,123,15
 2020-04-20,Kuwait,1995,367,9
 2020-04-20,Kyrgyzstan,568,201,7
@@ -17010,7 +17010,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-21,Jordan,428,297,7
 2020-04-21,Kazakhstan,1995,489,19
 2020-04-21,Kenya,296,74,14
-2020-04-21,South Korea,10683,8213,237
+2020-04-21,"Korea, South",10683,8213,237
 2020-04-21,Kosovo,604,128,18
 2020-04-21,Kuwait,2080,412,11
 2020-04-21,Kyrgyzstan,590,216,7
@@ -17198,7 +17198,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-22,Jordan,435,315,7
 2020-04-22,Kazakhstan,2135,515,19
 2020-04-22,Kenya,303,74,14
-2020-04-22,South Korea,10694,8277,238
+2020-04-22,"Korea, South",10694,8277,238
 2020-04-22,Kosovo,630,138,18
 2020-04-22,Kuwait,2248,443,13
 2020-04-22,Kyrgyzstan,612,254,7
@@ -17386,7 +17386,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-23,Jordan,437,318,7
 2020-04-23,Kazakhstan,2289,560,20
 2020-04-23,Kenya,320,89,14
-2020-04-23,South Korea,10708,8501,240
+2020-04-23,"Korea, South",10708,8501,240
 2020-04-23,Kosovo,669,159,19
 2020-04-23,Kuwait,2399,498,14
 2020-04-23,Kyrgyzstan,631,302,8
@@ -17574,7 +17574,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-24,Jordan,441,326,7
 2020-04-24,Kazakhstan,2482,604,25
 2020-04-24,Kenya,336,94,14
-2020-04-24,South Korea,10718,8635,240
+2020-04-24,"Korea, South",10718,8635,240
 2020-04-24,Kosovo,703,162,19
 2020-04-24,Kuwait,2614,613,15
 2020-04-24,Kyrgyzstan,665,345,8
@@ -17762,7 +17762,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-25,Jordan,444,332,7
 2020-04-25,Kazakhstan,2601,646,25
 2020-04-25,Kenya,343,98,14
-2020-04-25,South Korea,10728,8717,242
+2020-04-25,"Korea, South",10728,8717,242
 2020-04-25,Kosovo,731,165,20
 2020-04-25,Kuwait,2892,656,19
 2020-04-25,Kyrgyzstan,665,345,8
@@ -17950,7 +17950,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-26,Jordan,447,337,7
 2020-04-26,Kazakhstan,2717,682,25
 2020-04-26,Kenya,355,106,14
-2020-04-26,South Korea,10738,8764,243
+2020-04-26,"Korea, South",10738,8764,243
 2020-04-26,Kosovo,763,166,21
 2020-04-26,Kuwait,3075,806,20
 2020-04-26,Kyrgyzstan,682,370,8
@@ -18138,7 +18138,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-27,Jordan,449,342,7
 2020-04-27,Kazakhstan,2835,720,25
 2020-04-27,Kenya,363,114,14
-2020-04-27,South Korea,10752,8854,244
+2020-04-27,"Korea, South",10752,8854,244
 2020-04-27,Kosovo,780,201,22
 2020-04-27,Kuwait,3288,1012,22
 2020-04-27,Kyrgyzstan,695,395,8
@@ -18326,7 +18326,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-28,Jordan,449,348,8
 2020-04-28,Kazakhstan,3027,774,25
 2020-04-28,Kenya,374,124,14
-2020-04-28,South Korea,10761,8922,246
+2020-04-28,"Korea, South",10761,8922,246
 2020-04-28,Kosovo,790,232,22
 2020-04-28,Kuwait,3440,1176,23
 2020-04-28,Kyrgyzstan,708,416,8
@@ -18514,7 +18514,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-29,Jordan,451,356,8
 2020-04-29,Kazakhstan,3138,819,25
 2020-04-29,Kenya,384,129,15
-2020-04-29,South Korea,10765,9059,247
+2020-04-29,"Korea, South",10765,9059,247
 2020-04-29,Kosovo,799,249,22
 2020-04-29,Kuwait,3740,1389,24
 2020-04-29,Kyrgyzstan,729,437,8
@@ -18702,7 +18702,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-04-30,Jordan,453,362,8
 2020-04-30,Kazakhstan,3402,866,25
 2020-04-30,Kenya,396,144,17
-2020-04-30,South Korea,10774,9072,248
+2020-04-30,"Korea, South",10774,9072,248
 2020-04-30,Kosovo,806,271,22
 2020-04-30,Kuwait,4024,1539,26
 2020-04-30,Kyrgyzstan,746,462,8
@@ -18890,7 +18890,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-01,Jordan,459,364,8
 2020-05-01,Kazakhstan,3597,922,25
 2020-05-01,Kenya,411,150,21
-2020-05-01,South Korea,10780,9123,250
+2020-05-01,"Korea, South",10780,9123,250
 2020-05-01,Kosovo,806,271,22
 2020-05-01,Kuwait,4377,1602,30
 2020-05-01,Kyrgyzstan,756,504,8
@@ -19078,7 +19078,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-02,Jordan,460,367,9
 2020-05-02,Kazakhstan,3857,985,25
 2020-05-02,Kenya,435,152,22
-2020-05-02,South Korea,10793,9183,250
+2020-05-02,"Korea, South",10793,9183,250
 2020-05-02,Kosovo,823,336,22
 2020-05-02,Kuwait,4619,1703,33
 2020-05-02,Kyrgyzstan,769,527,8
@@ -19266,7 +19266,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-03,Jordan,461,367,9
 2020-05-03,Kazakhstan,3920,1084,27
 2020-05-03,Kenya,465,167,24
-2020-05-03,South Korea,10801,9217,252
+2020-05-03,"Korea, South",10801,9217,252
 2020-05-03,Kosovo,851,381,22
 2020-05-03,Kuwait,4983,1776,38
 2020-05-03,Kyrgyzstan,795,564,10
@@ -19454,7 +19454,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-04,Jordan,465,370,9
 2020-05-04,Kazakhstan,4049,1173,29
 2020-05-04,Kenya,490,173,24
-2020-05-04,South Korea,10804,9283,254
+2020-05-04,"Korea, South",10804,9283,254
 2020-05-04,Kosovo,855,403,26
 2020-05-04,Kuwait,5278,1947,40
 2020-05-04,Kyrgyzstan,830,575,10
@@ -19642,7 +19642,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-05,Jordan,471,375,9
 2020-05-05,Kazakhstan,4205,1279,29
 2020-05-05,Kenya,535,182,24
-2020-05-05,South Korea,10806,9333,255
+2020-05-05,"Korea, South",10806,9333,255
 2020-05-05,Kosovo,856,490,26
 2020-05-05,Kuwait,5804,2032,40
 2020-05-05,Kyrgyzstan,843,600,11
@@ -19830,7 +19830,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-06,Jordan,473,377,9
 2020-05-06,Kazakhstan,4422,1408,30
 2020-05-06,Kenya,582,190,26
-2020-05-06,South Korea,10810,9419,256
+2020-05-06,"Korea, South",10810,9419,256
 2020-05-06,Kosovo,856,490,26
 2020-05-06,Kuwait,6289,2219,42
 2020-05-06,Kyrgyzstan,871,614,12
@@ -20018,7 +20018,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-07,Jordan,494,381,9
 2020-05-07,Kazakhstan,4578,1518,30
 2020-05-07,Kenya,607,197,29
-2020-05-07,South Korea,10822,9484,256
+2020-05-07,"Korea, South",10822,9484,256
 2020-05-07,Kosovo,861,562,27
 2020-05-07,Kuwait,6567,2381,44
 2020-05-07,Kyrgyzstan,895,637,12
@@ -20206,7 +20206,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-08,Jordan,508,385,9
 2020-05-08,Kazakhstan,4834,1631,31
 2020-05-08,Kenya,621,202,29
-2020-05-08,South Korea,10840,9568,256
+2020-05-08,"Korea, South",10840,9568,256
 2020-05-08,Kosovo,861,562,27
 2020-05-08,Kuwait,7208,2466,47
 2020-05-08,Kyrgyzstan,906,650,12
@@ -20394,7 +20394,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-09,Jordan,522,387,9
 2020-05-09,Kazakhstan,4975,1776,31
 2020-05-09,Kenya,649,207,30
-2020-05-09,South Korea,10874,9610,256
+2020-05-09,"Korea, South",10874,9610,256
 2020-05-09,Kosovo,862,622,28
 2020-05-09,Kuwait,7623,2622,49
 2020-05-09,Kyrgyzstan,931,658,12
@@ -20582,7 +20582,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-10,Jordan,540,389,9
 2020-05-10,Kazakhstan,5090,1941,31
 2020-05-10,Kenya,672,239,32
-2020-05-10,South Korea,10909,9632,256
+2020-05-10,"Korea, South",10909,9632,256
 2020-05-10,Kosovo,870,653,28
 2020-05-10,Kuwait,8688,2729,58
 2020-05-10,Kyrgyzstan,1002,675,12
@@ -20770,7 +20770,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-11,Jordan,562,390,9
 2020-05-11,Kazakhstan,5207,2074,32
 2020-05-11,Kenya,700,251,33
-2020-05-11,South Korea,10936,9670,258
+2020-05-11,"Korea, South",10936,9670,258
 2020-05-11,Kosovo,884,655,28
 2020-05-11,Kuwait,9286,2907,65
 2020-05-11,Kyrgyzstan,1016,688,12
@@ -20958,7 +20958,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-12,Jordan,576,390,9
 2020-05-12,Kazakhstan,5279,2223,32
 2020-05-12,Kenya,715,259,36
-2020-05-12,South Korea,10962,9695,259
+2020-05-12,"Korea, South",10962,9695,259
 2020-05-12,Kosovo,919,671,29
 2020-05-12,Kuwait,10277,3101,75
 2020-05-12,Kyrgyzstan,1037,709,12
@@ -21146,7 +21146,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-13,Jordan,582,392,9
 2020-05-13,Kazakhstan,5417,2408,32
 2020-05-13,Kenya,737,281,40
-2020-05-13,South Korea,10991,9762,260
+2020-05-13,"Korea, South",10991,9762,260
 2020-05-13,Kosovo,919,671,29
 2020-05-13,Kuwait,11028,3263,82
 2020-05-13,Kyrgyzstan,1044,726,12
@@ -21334,7 +21334,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-14,Jordan,586,393,9
 2020-05-14,Kazakhstan,5571,2531,32
 2020-05-14,Kenya,758,284,42
-2020-05-14,South Korea,11018,9821,260
+2020-05-14,"Korea, South",11018,9821,260
 2020-05-14,Kosovo,944,690,29
 2020-05-14,Kuwait,11975,3451,88
 2020-05-14,Kyrgyzstan,1082,735,12
@@ -21522,7 +21522,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-15,Jordan,596,401,9
 2020-05-15,Kazakhstan,5689,2707,34
 2020-05-15,Kenya,781,284,45
-2020-05-15,South Korea,11037,9851,262
+2020-05-15,"Korea, South",11037,9851,262
 2020-05-15,Kosovo,944,690,29
 2020-05-15,Kuwait,12860,3640,96
 2020-05-15,Kyrgyzstan,1111,745,14
@@ -21710,7 +21710,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-16,Jordan,607,404,9
 2020-05-16,Kazakhstan,5850,2980,34
 2020-05-16,Kenya,830,301,50
-2020-05-16,South Korea,11050,9888,262
+2020-05-16,"Korea, South",11050,9888,262
 2020-05-16,Kosovo,944,690,29
 2020-05-16,Kuwait,13802,3843,107
 2020-05-16,Kyrgyzstan,1117,783,14
@@ -21898,7 +21898,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-17,Jordan,613,408,9
 2020-05-17,Kazakhstan,6157,3256,34
 2020-05-17,Kenya,887,313,50
-2020-05-17,South Korea,11065,9904,263
+2020-05-17,"Korea, South",11065,9904,263
 2020-05-17,Kosovo,955,691,29
 2020-05-17,Kuwait,14850,4093,112
 2020-05-17,Kyrgyzstan,1138,804,14
@@ -22086,7 +22086,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-18,Jordan,629,413,9
 2020-05-18,Kazakhstan,6751,3469,35
 2020-05-18,Kenya,912,336,50
-2020-05-18,South Korea,11078,9938,263
+2020-05-18,"Korea, South",11078,9938,263
 2020-05-18,Kosovo,955,691,29
 2020-05-18,Kuwait,15691,4339,118
 2020-05-18,Kyrgyzstan,1216,827,14
@@ -22274,7 +22274,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-19,Jordan,649,417,9
 2020-05-19,Kazakhstan,6751,3598,35
 2020-05-19,Kenya,963,358,50
-2020-05-19,South Korea,11110,10066,263
+2020-05-19,"Korea, South",11110,10066,263
 2020-05-19,Kosovo,989,769,29
 2020-05-19,Kuwait,16764,4681,121
 2020-05-19,Kyrgyzstan,1243,898,14
@@ -22462,7 +22462,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-20,Jordan,672,446,9
 2020-05-20,Kazakhstan,6969,3734,35
 2020-05-20,Kenya,1029,366,50
-2020-05-20,South Korea,11122,10135,264
+2020-05-20,"Korea, South",11122,10135,264
 2020-05-20,Kosovo,989,769,29
 2020-05-20,Kuwait,17568,4885,124
 2020-05-20,Kyrgyzstan,1270,910,14
@@ -22650,7 +22650,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-21,Jordan,684,457,9
 2020-05-21,Kazakhstan,7234,3843,35
 2020-05-21,Kenya,1109,375,50
-2020-05-21,South Korea,11142,10162,264
+2020-05-21,"Korea, South",11142,10162,264
 2020-05-21,Kosovo,1003,772,29
 2020-05-21,Kuwait,18609,5205,129
 2020-05-21,Kyrgyzstan,1313,923,14
@@ -22838,7 +22838,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-22,Jordan,700,461,9
 2020-05-22,Kazakhstan,7919,4096,35
 2020-05-22,Kenya,1161,380,50
-2020-05-22,South Korea,11165,10194,266
+2020-05-22,"Korea, South",11165,10194,266
 2020-05-22,Kosovo,1004,772,29
 2020-05-22,Kuwait,19564,5515,138
 2020-05-22,Kyrgyzstan,1350,939,14
@@ -23026,7 +23026,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-23,Jordan,704,470,9
 2020-05-23,Kazakhstan,7919,4214,35
 2020-05-23,Kenya,1192,380,50
-2020-05-23,South Korea,11190,10213,266
+2020-05-23,"Korea, South",11190,10213,266
 2020-05-23,Kosovo,1025,782,29
 2020-05-23,Kuwait,20464,5747,148
 2020-05-23,Kyrgyzstan,1365,957,14
@@ -23214,7 +23214,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-24,Jordan,708,471,9
 2020-05-24,Kazakhstan,8531,4352,35
 2020-05-24,Kenya,1214,383,51
-2020-05-24,South Korea,11206,10226,267
+2020-05-24,"Korea, South",11206,10226,267
 2020-05-24,Kosovo,1032,785,29
 2020-05-24,Kuwait,21302,6117,156
 2020-05-24,Kyrgyzstan,1403,980,14
@@ -23402,7 +23402,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-25,Jordan,711,479,9
 2020-05-25,Kazakhstan,8969,4515,35
 2020-05-25,Kenya,1286,402,52
-2020-05-25,South Korea,11225,10275,269
+2020-05-25,"Korea, South",11225,10275,269
 2020-05-25,Kosovo,1038,791,30
 2020-05-25,Kuwait,21967,6621,165
 2020-05-25,Kyrgyzstan,1433,992,16
@@ -23590,7 +23590,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-26,Jordan,718,586,9
 2020-05-26,Kazakhstan,8969,4613,37
 2020-05-26,Kenya,1348,405,52
-2020-05-26,South Korea,11265,10295,269
+2020-05-26,"Korea, South",11265,10295,269
 2020-05-26,Kosovo,1038,791,30
 2020-05-26,Kuwait,22575,7306,172
 2020-05-26,Kyrgyzstan,1468,1015,16
@@ -23778,7 +23778,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-27,Jordan,720,586,9
 2020-05-27,Kazakhstan,9304,4768,37
 2020-05-27,Kenya,1471,408,55
-2020-05-27,South Korea,11344,10340,269
+2020-05-27,"Korea, South",11344,10340,269
 2020-05-27,Kosovo,1047,794,30
 2020-05-27,Kuwait,23267,7946,175
 2020-05-27,Kyrgyzstan,1520,1043,16
@@ -23966,7 +23966,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-28,Jordan,728,497,9
 2020-05-28,Kazakhstan,9576,4900,37
 2020-05-28,Kenya,1618,421,58
-2020-05-28,South Korea,11402,10363,269
+2020-05-28,"Korea, South",11402,10363,269
 2020-05-28,Kosovo,1048,801,30
 2020-05-28,Kuwait,24112,8698,185
 2020-05-28,Kyrgyzstan,1594,1066,16
@@ -24154,7 +24154,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-29,Jordan,730,507,9
 2020-05-29,Kazakhstan,9932,5057,37
 2020-05-29,Kenya,1745,438,62
-2020-05-29,South Korea,11441,10398,269
+2020-05-29,"Korea, South",11441,10398,269
 2020-05-29,Kosovo,1048,801,30
 2020-05-29,Kuwait,25184,9273,194
 2020-05-29,Kyrgyzstan,1662,1088,16
@@ -24342,7 +24342,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-30,Jordan,734,507,9
 2020-05-30,Kazakhstan,10382,5220,38
 2020-05-30,Kenya,1888,464,63
-2020-05-30,South Korea,11468,10405,270
+2020-05-30,"Korea, South",11468,10405,270
 2020-05-30,Kosovo,1064,829,30
 2020-05-30,Kuwait,26192,10156,205
 2020-05-30,Kyrgyzstan,1722,1113,16
@@ -24530,7 +24530,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-05-31,Jordan,739,522,9
 2020-05-31,Kazakhstan,10858,5404,40
 2020-05-31,Kenya,1962,478,64
-2020-05-31,South Korea,11503,10422,271
+2020-05-31,"Korea, South",11503,10422,271
 2020-05-31,Kosovo,1064,829,30
 2020-05-31,Kuwait,27043,11386,212
 2020-05-31,Kyrgyzstan,1748,1170,16
@@ -24718,7 +24718,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-01,Jordan,746,535,9
 2020-06-01,Kazakhstan,11308,5587,41
 2020-06-01,Kenya,2021,482,69
-2020-06-01,South Korea,11541,10446,272
+2020-06-01,"Korea, South",11541,10446,272
 2020-06-01,Kosovo,1064,829,30
 2020-06-01,Kuwait,27762,12899,220
 2020-06-01,Kyrgyzstan,1817,1181,16
@@ -24906,7 +24906,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-02,Jordan,755,549,9
 2020-06-02,Kazakhstan,11571,5941,44
 2020-06-02,Kenya,2093,499,71
-2020-06-02,South Korea,11590,10467,273
+2020-06-02,"Korea, South",11590,10467,273
 2020-06-02,Kosovo,1064,829,30
 2020-06-02,Kuwait,28649,14281,226
 2020-06-02,Kyrgyzstan,1845,1219,17
@@ -25094,7 +25094,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-03,Jordan,757,561,9
 2020-06-03,Kazakhstan,12067,6240,48
 2020-06-03,Kenya,2216,553,74
-2020-06-03,South Korea,11629,10499,273
+2020-06-03,"Korea, South",11629,10499,273
 2020-06-03,Kosovo,1142,871,30
 2020-06-03,Kuwait,29359,15750,230
 2020-06-03,Kyrgyzstan,1871,1265,20
@@ -25282,7 +25282,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-04,Jordan,765,566,9
 2020-06-04,Kazakhstan,12067,6606,52
 2020-06-04,Kenya,2340,592,78
-2020-06-04,South Korea,11668,10506,273
+2020-06-04,"Korea, South",11668,10506,273
 2020-06-04,Kosovo,1142,871,30
 2020-06-04,Kuwait,29921,17223,236
 2020-06-04,Kyrgyzstan,1899,1292,20
@@ -25470,7 +25470,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-05,Jordan,784,571,9
 2020-06-05,Kazakhstan,12312,6903,52
 2020-06-05,Kenya,2474,643,79
-2020-06-05,South Korea,11719,10531,273
+2020-06-05,"Korea, South",11719,10531,273
 2020-06-05,Kosovo,1142,871,30
 2020-06-05,Kuwait,30644,18277,244
 2020-06-05,Kyrgyzstan,1936,1340,22
@@ -25658,7 +25658,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-06,Jordan,795,586,9
 2020-06-06,Kazakhstan,12511,7135,53
 2020-06-06,Kenya,2600,706,83
-2020-06-06,South Korea,11776,10552,273
+2020-06-06,"Korea, South",11776,10552,273
 2020-06-06,Kosovo,1142,871,30
 2020-06-06,Kuwait,31131,19282,254
 2020-06-06,Kyrgyzstan,1974,1360,22
@@ -25741,7 +25741,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-06,Trinidad and Tobago,117,108,8
 2020-06-06,Tunisia,1087,977,49
 2020-06-06,Turkey,169218,135322,4669
-2020-06-06,US,1926538,500849,110123
+2020-06-06,US,1926538,500849,110124
 2020-06-06,Uganda,593,82,0
 2020-06-06,Ukraine,27101,12265,785
 2020-06-06,United Arab Emirates,38268,21061,275
@@ -25846,7 +25846,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-07,Jordan,808,607,9
 2020-06-07,Kazakhstan,12694,7376,56
 2020-06-07,Kenya,2767,752,84
-2020-06-07,South Korea,11814,10563,273
+2020-06-07,"Korea, South",11814,10563,273
 2020-06-07,Kosovo,1142,871,30
 2020-06-07,Kuwait,31848,20205,264
 2020-06-07,Kyrgyzstan,2007,1425,22
@@ -26034,7 +26034,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-08,Jordan,831,627,9
 2020-06-08,Kazakhstan,12859,7376,56
 2020-06-08,Kenya,2872,849,85
-2020-06-08,South Korea,11852,10589,274
+2020-06-08,"Korea, South",11852,10589,274
 2020-06-08,Kosovo,1263,912,31
 2020-06-08,Kuwait,32510,21242,269
 2020-06-08,Kyrgyzstan,2032,1445,23
@@ -26222,7 +26222,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-09,Jordan,845,657,9
 2020-06-09,Kazakhstan,13074,8015,61
 2020-06-09,Kenya,2989,873,88
-2020-06-09,South Korea,11902,10611,276
+2020-06-09,"Korea, South",11902,10611,276
 2020-06-09,Kosovo,1263,912,31
 2020-06-09,Kuwait,33140,22162,273
 2020-06-09,Kyrgyzstan,2055,1483,24
@@ -26398,7 +26398,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-10,Honduras,7360,809,290
 2020-06-10,Hungary,4027,2355,551
 2020-06-10,Iceland,1807,1794,10
-2020-06-10,India,286605,135206,8498
+2020-06-10,India,286605,135206,8102
 2020-06-10,Indonesia,34316,12129,1959
 2020-06-10,Iran,177938,140590,8506
 2020-06-10,Iraq,15414,6214,426
@@ -26410,7 +26410,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-10,Jordan,863,663,9
 2020-06-10,Kazakhstan,13319,8345,67
 2020-06-10,Kenya,3094,1048,89
-2020-06-10,South Korea,11947,10654,276
+2020-06-10,"Korea, South",11947,10654,276
 2020-06-10,Kosovo,1298,913,31
 2020-06-10,Kuwait,33823,23288,275
 2020-06-10,Kyrgyzstan,2093,1572,26
@@ -26598,7 +26598,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-11,Jordan,890,670,9
 2020-06-11,Kazakhstan,13872,8593,67
 2020-06-11,Kenya,3215,1092,92
-2020-06-11,South Korea,12003,10669,277
+2020-06-11,"Korea, South",12003,10669,277
 2020-06-11,Kosovo,1326,921,31
 2020-06-11,Kuwait,34432,24137,279
 2020-06-11,Kyrgyzstan,2166,1668,26
@@ -26774,7 +26774,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-12,Honduras,8132,844,306
 2020-06-12,Hungary,4053,2447,555
 2020-06-12,Iceland,1807,1794,10
-2020-06-12,India,297535,147195,8498
+2020-06-12,India,308993,154330,8884
 2020-06-12,Indonesia,36406,13213,2048
 2020-06-12,Iran,182525,144649,8659
 2020-06-12,Iraq,17770,6868,496
@@ -26786,7 +26786,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-12,Jordan,915,671,9
 2020-06-12,Kazakhstan,13872,8829,70
 2020-06-12,Kenya,3305,1164,96
-2020-06-12,South Korea,12051,10691,277
+2020-06-12,"Korea, South",12051,10691,277
 2020-06-12,Kosovo,1326,921,31
 2020-06-12,Kuwait,34952,25048,285
 2020-06-12,Kyrgyzstan,2166,1668,26
@@ -26962,7 +26962,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-13,Honduras,8455,894,310
 2020-06-13,Hungary,4064,2476,559
 2020-06-13,Iceland,1808,1794,10
-2020-06-13,India,308993,154330,8884
+2020-06-13,India,320922,162379,9195
 2020-06-13,Indonesia,37420,13776,2091
 2020-06-13,Iran,184955,146748,8730
 2020-06-13,Iraq,18950,7515,549
@@ -26974,7 +26974,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-13,Jordan,953,678,9
 2020-06-13,Kazakhstan,14238,8829,73
 2020-06-13,Kenya,3457,1221,100
-2020-06-13,South Korea,12085,10718,277
+2020-06-13,"Korea, South",12085,10718,277
 2020-06-13,Kosovo,1437,928,32
 2020-06-13,Kuwait,35466,25882,289
 2020-06-13,Kyrgyzstan,2207,1722,27
@@ -27150,7 +27150,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-14,Honduras,8858,967,312
 2020-06-14,Hungary,4069,2482,562
 2020-06-14,Iceland,1810,1796,10
-2020-06-14,India,320922,162379,9195
+2020-06-14,India,332424,169798,9520
 2020-06-14,Indonesia,38277,14531,2134
 2020-06-14,Iran,187427,148674,8837
 2020-06-14,Iraq,20209,8121,607
@@ -27162,7 +27162,7 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-14,Jordan,961,682,9
 2020-06-14,Kazakhstan,14496,9188,77
 2020-06-14,Kenya,3594,1253,103
-2020-06-14,South Korea,12121,10730,277
+2020-06-14,"Korea, South",12121,10730,277
 2020-06-14,Kosovo,1437,928,32
 2020-06-14,Kuwait,35920,26759,296
 2020-06-14,Kyrgyzstan,2285,1791,27
@@ -27259,3 +27259,567 @@ Date,Country,Confirmed,Recovered,Deaths
 2020-06-14,Yemen,728,53,164
 2020-06-14,Zambia,1358,1122,11
 2020-06-14,Zimbabwe,383,54,4
+2020-06-15,Afghanistan,25527,5164,478
+2020-06-15,Albania,1590,1055,36
+2020-06-15,Algeria,11031,7735,777
+2020-06-15,Andorra,853,789,51
+2020-06-15,Angola,142,64,6
+2020-06-15,Antigua and Barbuda,26,20,3
+2020-06-15,Argentina,32785,9891,854
+2020-06-15,Armenia,17064,6276,285
+2020-06-15,Australia,7347,6856,102
+2020-06-15,Austria,17135,16066,678
+2020-06-15,Azerbaijan,10324,5739,122
+2020-06-15,Bahamas,103,68,11
+2020-06-15,Bahrain,19013,13267,46
+2020-06-15,Bangladesh,90619,18731,1209
+2020-06-15,Barbados,97,83,7
+2020-06-15,Belarus,54680,30420,312
+2020-06-15,Belgium,60100,16610,9661
+2020-06-15,Belize,21,16,2
+2020-06-15,Benin,483,232,9
+2020-06-15,Bhutan,67,22,0
+2020-06-15,Bolivia,19073,3430,632
+2020-06-15,Bosnia and Herzegovina,3040,2162,165
+2020-06-15,Botswana,60,24,1
+2020-06-15,Brazil,888271,477709,43959
+2020-06-15,Brunei,141,138,2
+2020-06-15,Bulgaria,3341,1784,176
+2020-06-15,Burkina Faso,894,804,53
+2020-06-15,Burma,262,175,6
+2020-06-15,Burundi,85,45,1
+2020-06-15,Cabo Verde,760,340,7
+2020-06-15,Cambodia,128,125,0
+2020-06-15,Cameroon,9864,5570,276
+2020-06-15,Canada,100763,61466,8228
+2020-06-15,Central African Republic,2222,369,7
+2020-06-15,Chad,850,720,73
+2020-06-15,Chile,179436,148792,3362
+2020-06-15,China,84378,79489,4638
+2020-06-15,Colombia,53168,19985,1808
+2020-06-15,Comoros,176,114,2
+2020-06-15,Congo (Brazzaville),883,391,27
+2020-06-15,Congo (Kinshasa),4837,613,112
+2020-06-15,Costa Rica,1744,771,12
+2020-06-15,Cote d'Ivoire,5439,2590,46
+2020-06-15,Croatia,2254,2140,107
+2020-06-15,Cuba,2262,1965,84
+2020-06-15,Cyprus,985,807,18
+2020-06-15,Czechia,10064,7296,330
+2020-06-15,Denmark,12417,11290,598
+2020-06-15,Diamond Princess,712,651,13
+2020-06-15,Djibouti,4501,3183,43
+2020-06-15,Dominica,18,16,0
+2020-06-15,Dominican Republic,23271,14025,605
+2020-06-15,Ecuador,47322,23349,3929
+2020-06-15,Egypt,46289,12329,1672
+2020-06-15,El Salvador,3826,1926,74
+2020-06-15,Equatorial Guinea,1306,200,12
+2020-06-15,Eritrea,109,39,0
+2020-06-15,Estonia,1974,1717,69
+2020-06-15,Eswatini,506,249,4
+2020-06-15,Ethiopia,3521,620,60
+2020-06-15,Fiji,18,18,0
+2020-06-15,Finland,7108,6200,326
+2020-06-15,France,194305,73168,29439
+2020-06-15,Gabon,4033,1334,27
+2020-06-15,Gambia,30,24,1
+2020-06-15,Georgia,879,704,14
+2020-06-15,Germany,187682,172692,8807
+2020-06-15,Ghana,11964,4258,54
+2020-06-15,Greece,3134,1374,184
+2020-06-15,Grenada,23,22,0
+2020-06-15,Guatemala,10272,1966,399
+2020-06-15,Guinea,4572,3259,26
+2020-06-15,Guinea-Bissau,1492,153,15
+2020-06-15,Guyana,159,99,12
+2020-06-15,Haiti,4441,24,76
+2020-06-15,Holy See,12,12,0
+2020-06-15,Honduras,9178,1025,322
+2020-06-15,Hungary,4076,2485,563
+2020-06-15,Iceland,1810,1796,10
+2020-06-15,India,343091,180013,9900
+2020-06-15,Indonesia,39294,15123,2198
+2020-06-15,Iran,189876,150590,8950
+2020-06-15,Iraq,21315,9271,652
+2020-06-15,Ireland,25321,22698,1706
+2020-06-15,Israel,19237,15415,302
+2020-06-15,Italy,237290,177010,34371
+2020-06-15,Jamaica,621,430,10
+2020-06-15,Japan,17439,15567,929
+2020-06-15,Jordan,979,692,9
+2020-06-15,Kazakhstan,15192,9388,81
+2020-06-15,Kenya,3727,1286,104
+2020-06-15,"Korea, South",12155,10760,278
+2020-06-15,Kosovo,1486,953,33
+2020-06-15,Kuwait,36431,27531,298
+2020-06-15,Kyrgyzstan,2472,1847,28
+2020-06-15,Laos,19,19,0
+2020-06-15,Latvia,1097,845,28
+2020-06-15,Lebanon,1464,875,32
+2020-06-15,Lesotho,4,2,0
+2020-06-15,Liberia,498,221,33
+2020-06-15,Libya,467,70,10
+2020-06-15,Liechtenstein,82,55,1
+2020-06-15,Lithuania,1773,1429,76
+2020-06-15,Luxembourg,4072,3931,110
+2020-06-15,MS Zaandam,9,0,2
+2020-06-15,Madagascar,1290,384,10
+2020-06-15,Malawi,555,69,6
+2020-06-15,Malaysia,8494,7400,121
+2020-06-15,Maldives,2065,1540,8
+2020-06-15,Mali,1860,1125,104
+2020-06-15,Malta,650,603,9
+2020-06-15,Mauritania,1887,360,91
+2020-06-15,Mauritius,337,325,10
+2020-06-15,Mexico,150264,112292,17580
+2020-06-15,Moldova,11879,6794,411
+2020-06-15,Monaco,99,93,4
+2020-06-15,Mongolia,197,109,0
+2020-06-15,Montenegro,326,315,9
+2020-06-15,Morocco,8885,7828,212
+2020-06-15,Mozambique,609,157,3
+2020-06-15,Namibia,32,17,0
+2020-06-15,Nepal,6211,1041,19
+2020-06-15,Netherlands,49155,186,6084
+2020-06-15,New Zealand,1506,1482,22
+2020-06-15,Nicaragua,1464,953,55
+2020-06-15,Niger,980,885,66
+2020-06-15,Nigeria,16658,5349,424
+2020-06-15,North Macedonia,4157,1723,193
+2020-06-15,Norway,8647,8138,242
+2020-06-15,Oman,24524,9533,108
+2020-06-15,Pakistan,148921,56390,2839
+2020-06-15,Panama,21422,13766,448
+2020-06-15,Papua New Guinea,8,8,0
+2020-06-15,Paraguay,1296,673,12
+2020-06-15,Peru,232992,119409,6860
+2020-06-15,Philippines,26420,6252,1098
+2020-06-15,Poland,29788,14383,1256
+2020-06-15,Portugal,37036,22852,1520
+2020-06-15,Qatar,80876,58681,76
+2020-06-15,Romania,22165,15817,1427
+2020-06-15,Russia,536484,284021,7081
+2020-06-15,Rwanda,612,338,2
+2020-06-15,Saint Kitts and Nevis,15,15,0
+2020-06-15,Saint Lucia,19,18,0
+2020-06-15,Saint Vincent and the Grenadines,27,25,0
+2020-06-15,San Marino,694,575,42
+2020-06-15,Sao Tome and Principe,662,177,12
+2020-06-15,Saudi Arabia,132048,87890,1011
+2020-06-15,Senegal,5173,3424,64
+2020-06-15,Serbia,12367,11561,255
+2020-06-15,Seychelles,11,11,0
+2020-06-15,Sierra Leone,1176,683,51
+2020-06-15,Singapore,40818,30366,26
+2020-06-15,Slovakia,1552,1410,28
+2020-06-15,Slovenia,1496,1359,109
+2020-06-15,Somalia,2642,622,88
+2020-06-15,South Africa,73533,39867,1568
+2020-06-15,South Sudan,1693,49,27
+2020-06-15,Spain,244109,150376,27136
+2020-06-15,Sri Lanka,1905,1342,11
+2020-06-15,Sudan,7435,2720,468
+2020-06-15,Suriname,229,48,5
+2020-06-15,Sweden,52383,0,4891
+2020-06-15,Switzerland,31131,28900,1939
+2020-06-15,Syria,177,78,6
+2020-06-15,Taiwan*,445,433,7
+2020-06-15,Tajikistan,5097,3503,50
+2020-06-15,Tanzania,509,183,21
+2020-06-15,Thailand,3135,2987,58
+2020-06-15,Timor-Leste,24,24,0
+2020-06-15,Togo,531,299,13
+2020-06-15,Trinidad and Tobago,123,109,8
+2020-06-15,Tunisia,1110,999,49
+2020-06-15,Turkey,179831,152364,4825
+2020-06-15,US,2114026,576334,116127
+2020-06-15,Uganda,705,299,0
+2020-06-15,Ukraine,32536,14771,911
+2020-06-15,United Arab Emirates,42636,28129,291
+2020-06-15,United Kingdom,298315,1284,41821
+2020-06-15,Uruguay,848,792,23
+2020-06-15,Uzbekistan,5263,4019,19
+2020-06-15,Venezuela,3062,835,26
+2020-06-15,Vietnam,334,323,0
+2020-06-15,West Bank and Gaza,505,415,3
+2020-06-15,Western Sahara,9,8,1
+2020-06-15,Yemen,844,79,208
+2020-06-15,Zambia,1382,1142,11
+2020-06-15,Zimbabwe,387,54,4
+2020-06-16,Afghanistan,26310,5508,491
+2020-06-16,Albania,1672,1064,37
+2020-06-16,Algeria,11147,7842,788
+2020-06-16,Andorra,854,789,52
+2020-06-16,Angola,148,64,6
+2020-06-16,Antigua and Barbuda,26,22,3
+2020-06-16,Argentina,34159,10174,878
+2020-06-16,Armenia,17489,6571,293
+2020-06-16,Australia,7370,6861,102
+2020-06-16,Austria,17189,16089,681
+2020-06-16,Azerbaijan,10662,5948,126
+2020-06-16,Bahamas,104,72,11
+2020-06-16,Bahrain,19553,13866,47
+2020-06-16,Bangladesh,94481,36264,1262
+2020-06-16,Barbados,97,83,7
+2020-06-16,Belarus,55369,31273,318
+2020-06-16,Belgium,60155,16625,9663
+2020-06-16,Belize,22,16,2
+2020-06-16,Benin,532,236,9
+2020-06-16,Bhutan,67,24,0
+2020-06-16,Bolivia,19883,3752,659
+2020-06-16,Bosnia and Herzegovina,3085,2178,168
+2020-06-16,Botswana,60,24,1
+2020-06-16,Brazil,923189,490005,45241
+2020-06-16,Brunei,141,138,3
+2020-06-16,Bulgaria,3453,1817,181
+2020-06-16,Burkina Faso,895,807,53
+2020-06-16,Burma,262,179,6
+2020-06-16,Burundi,104,75,1
+2020-06-16,Cabo Verde,781,354,7
+2020-06-16,Cambodia,128,126,0
+2020-06-16,Cameroon,9864,5570,276
+2020-06-16,Canada,101087,61899,8271
+2020-06-16,Central African Republic,2410,396,14
+2020-06-16,Chad,853,720,74
+2020-06-16,Chile,184449,156232,3383
+2020-06-16,China,84422,79493,4638
+2020-06-16,Colombia,53211,19986,1808
+2020-06-16,Comoros,197,127,3
+2020-06-16,Congo (Brazzaville),883,391,27
+2020-06-16,Congo (Kinshasa),4974,628,112
+2020-06-16,Costa Rica,1796,794,12
+2020-06-16,Cote d'Ivoire,5679,2637,46
+2020-06-16,Croatia,2255,2140,107
+2020-06-16,Cuba,2273,1994,84
+2020-06-16,Cyprus,985,816,18
+2020-06-16,Czechia,10111,7358,331
+2020-06-16,Denmark,12450,11325,598
+2020-06-16,Diamond Princess,712,651,13
+2020-06-16,Djibouti,4539,3324,43
+2020-06-16,Dominica,18,16,0
+2020-06-16,Dominican Republic,23686,14133,615
+2020-06-16,Ecuador,47943,23684,3970
+2020-06-16,Egypt,47856,12730,1766
+2020-06-16,El Salvador,3941,2041,76
+2020-06-16,Equatorial Guinea,1664,515,32
+2020-06-16,Eritrea,121,39,0
+2020-06-16,Estonia,1975,1728,69
+2020-06-16,Eswatini,520,259,4
+2020-06-16,Ethiopia,3630,738,61
+2020-06-16,Fiji,18,18,0
+2020-06-16,Finland,7112,6200,326
+2020-06-16,France,194347,73459,29550
+2020-06-16,Gabon,4114,1432,29
+2020-06-16,Gambia,34,24,1
+2020-06-16,Georgia,879,724,14
+2020-06-16,Germany,188252,172842,8820
+2020-06-16,Ghana,12193,4326,58
+2020-06-16,Greece,3148,1374,185
+2020-06-16,Grenada,23,22,0
+2020-06-16,Guatemala,10706,2096,418
+2020-06-16,Guinea,4639,3327,26
+2020-06-16,Guinea-Bissau,1492,153,15
+2020-06-16,Guyana,171,99,12
+2020-06-16,Haiti,4547,24,80
+2020-06-16,Holy See,12,12,0
+2020-06-16,Honduras,9656,1075,330
+2020-06-16,Hungary,4077,2516,565
+2020-06-16,Iceland,1812,1796,10
+2020-06-16,India,354065,186935,11903
+2020-06-16,Indonesia,40400,15703,2231
+2020-06-16,Iran,192439,152675,9065
+2020-06-16,Iraq,22700,9862,712
+2020-06-16,Ireland,25334,22698,1709
+2020-06-16,Israel,19495,15449,302
+2020-06-16,Italy,237500,178526,34405
+2020-06-16,Jamaica,621,449,10
+2020-06-16,Japan,17484,15652,934
+2020-06-16,Jordan,981,693,9
+2020-06-16,Kazakhstan,15542,9647,88
+2020-06-16,Kenya,3860,1328,105
+2020-06-16,"Korea, South",12198,10774,279
+2020-06-16,Kosovo,1486,953,33
+2020-06-16,Kuwait,36958,28206,303
+2020-06-16,Kyrgyzstan,2562,1902,30
+2020-06-16,Laos,19,19,0
+2020-06-16,Latvia,1098,875,28
+2020-06-16,Lebanon,1473,889,32
+2020-06-16,Lesotho,4,2,0
+2020-06-16,Liberia,509,222,33
+2020-06-16,Libya,484,76,10
+2020-06-16,Liechtenstein,82,55,1
+2020-06-16,Lithuania,1776,1441,76
+2020-06-16,Luxembourg,4075,3933,110
+2020-06-16,MS Zaandam,9,0,2
+2020-06-16,Madagascar,1317,417,12
+2020-06-16,Malawi,564,73,6
+2020-06-16,Malaysia,8505,7733,121
+2020-06-16,Maldives,2094,1670,8
+2020-06-16,Mali,1885,1145,104
+2020-06-16,Malta,656,608,9
+2020-06-16,Mauritania,2057,373,93
+2020-06-16,Mauritius,337,325,10
+2020-06-16,Mexico,154863,115394,18310
+2020-06-16,Moldova,12254,6901,423
+2020-06-16,Monaco,99,94,4
+2020-06-16,Mongolia,197,111,0
+2020-06-16,Montenegro,326,315,9
+2020-06-16,Morocco,8931,7937,212
+2020-06-16,Mozambique,638,160,4
+2020-06-16,Namibia,34,18,0
+2020-06-16,Nepal,6591,1158,19
+2020-06-16,Netherlands,49295,186,6089
+2020-06-16,New Zealand,1506,1482,22
+2020-06-16,Nicaragua,1823,1238,64
+2020-06-16,Niger,1016,885,66
+2020-06-16,Nigeria,17148,5623,455
+2020-06-16,North Macedonia,4299,1757,201
+2020-06-16,Norway,8660,8138,242
+2020-06-16,Oman,25269,11089,114
+2020-06-16,Pakistan,154760,58437,2975
+2020-06-16,Panama,21962,13774,457
+2020-06-16,Papua New Guinea,8,8,0
+2020-06-16,Paraguay,1303,699,13
+2020-06-16,Peru,237156,125205,7056
+2020-06-16,Philippines,26781,6552,1103
+2020-06-16,Poland,30195,14654,1272
+2020-06-16,Portugal,37336,23212,1522
+2020-06-16,Qatar,82077,60461,80
+2020-06-16,Romania,22415,16071,1437
+2020-06-16,Russia,544725,293780,7274
+2020-06-16,Rwanda,636,338,2
+2020-06-16,Saint Kitts and Nevis,15,15,0
+2020-06-16,Saint Lucia,19,18,0
+2020-06-16,Saint Vincent and the Grenadines,29,25,0
+2020-06-16,San Marino,694,590,42
+2020-06-16,Sao Tome and Principe,671,182,12
+2020-06-16,Saudi Arabia,136315,89540,1052
+2020-06-16,Senegal,5247,3525,70
+2020-06-16,Serbia,12426,11624,256
+2020-06-16,Seychelles,11,11,0
+2020-06-16,Sierra Leone,1225,686,51
+2020-06-16,Singapore,40969,31163,26
+2020-06-16,Slovakia,1552,1426,28
+2020-06-16,Slovenia,1499,1359,109
+2020-06-16,Somalia,2658,649,88
+2020-06-16,South Africa,76334,42063,1625
+2020-06-16,South Sudan,1776,58,30
+2020-06-16,Spain,244328,150376,27136
+2020-06-16,Sri Lanka,1915,1371,11
+2020-06-16,Sudan,7740,2820,477
+2020-06-16,Suriname,236,48,6
+2020-06-16,Sweden,53323,0,4939
+2020-06-16,Switzerland,31154,28900,1954
+2020-06-16,Syria,177,78,6
+2020-06-16,Taiwan*,445,433,7
+2020-06-16,Tajikistan,5160,3624,50
+2020-06-16,Tanzania,509,183,21
+2020-06-16,Thailand,3135,2993,58
+2020-06-16,Timor-Leste,24,24,0
+2020-06-16,Togo,537,344,13
+2020-06-16,Trinidad and Tobago,123,109,8
+2020-06-16,Tunisia,1125,1002,49
+2020-06-16,Turkey,181298,153379,4842
+2020-06-16,US,2137731,583503,116963
+2020-06-16,Uganda,724,351,0
+2020-06-16,Ukraine,33209,15054,922
+2020-06-16,United Arab Emirates,42982,28861,293
+2020-06-16,United Kingdom,299600,1293,42054
+2020-06-16,Uruguay,849,801,24
+2020-06-16,Uzbekistan,5493,4096,19
+2020-06-16,Venezuela,3150,835,27
+2020-06-16,Vietnam,334,325,0
+2020-06-16,West Bank and Gaza,514,415,3
+2020-06-16,Western Sahara,9,8,1
+2020-06-16,Yemen,885,91,214
+2020-06-16,Zambia,1405,1142,11
+2020-06-16,Zimbabwe,391,62,4
+2020-06-17,Afghanistan,26874,6158,504
+2020-06-17,Albania,1722,1077,38
+2020-06-17,Algeria,11268,7943,799
+2020-06-17,Andorra,854,791,52
+2020-06-17,Angola,155,64,7
+2020-06-17,Antigua and Barbuda,26,22,3
+2020-06-17,Argentina,35552,10512,913
+2020-06-17,Armenia,18033,6814,302
+2020-06-17,Australia,7391,6877,102
+2020-06-17,Austria,17203,16099,687
+2020-06-17,Azerbaijan,10991,6075,133
+2020-06-17,Bahamas,104,72,11
+2020-06-17,Bahrain,19961,14185,49
+2020-06-17,Bangladesh,98489,38189,1305
+2020-06-17,Barbados,97,85,7
+2020-06-17,Belarus,56032,32735,324
+2020-06-17,Belgium,60244,16684,9675
+2020-06-17,Belize,22,16,2
+2020-06-17,Benin,572,237,9
+2020-06-17,Bhutan,67,24,0
+2020-06-17,Bolivia,20685,4002,679
+2020-06-17,Bosnia and Herzegovina,3141,2197,168
+2020-06-17,Botswana,79,25,1
+2020-06-17,Brazil,955377,521046,46510
+2020-06-17,Brunei,141,138,3
+2020-06-17,Bulgaria,3542,1880,184
+2020-06-17,Burkina Faso,899,809,53
+2020-06-17,Burma,262,185,6
+2020-06-17,Burundi,104,75,1
+2020-06-17,Cabo Verde,792,377,7
+2020-06-17,Cambodia,128,126,0
+2020-06-17,Cameroon,9864,5570,276
+2020-06-17,Canada,101491,63280,8312
+2020-06-17,Central African Republic,2564,402,18
+2020-06-17,Chad,854,721,74
+2020-06-17,Chile,220628,181931,3615
+2020-06-17,China,84458,79510,4638
+2020-06-17,Colombia,55083,20400,1887
+2020-06-17,Comoros,197,127,3
+2020-06-17,Congo (Brazzaville),883,391,27
+2020-06-17,Congo (Kinshasa),5100,640,115
+2020-06-17,Costa Rica,1871,899,12
+2020-06-17,Cote d'Ivoire,6063,2749,48
+2020-06-17,Croatia,2258,2141,107
+2020-06-17,Cuba,2280,1999,84
+2020-06-17,Cyprus,985,816,18
+2020-06-17,Czechia,10162,7399,333
+2020-06-17,Denmark,12494,11385,598
+2020-06-17,Diamond Princess,712,651,13
+2020-06-17,Djibouti,4545,3411,43
+2020-06-17,Dominica,18,16,0
+2020-06-17,Dominican Republic,24105,14216,633
+2020-06-17,Ecuador,48490,23881,4007
+2020-06-17,Egypt,49219,13141,1850
+2020-06-17,El Salvador,4066,2137,79
+2020-06-17,Equatorial Guinea,1664,515,32
+2020-06-17,Eritrea,131,39,0
+2020-06-17,Estonia,1977,1743,69
+2020-06-17,Eswatini,563,262,4
+2020-06-17,Ethiopia,3759,849,63
+2020-06-17,Fiji,18,18,0
+2020-06-17,Finland,7117,6200,326
+2020-06-17,France,194805,73791,29578
+2020-06-17,Gabon,4229,1505,30
+2020-06-17,Gambia,34,24,1
+2020-06-17,Georgia,888,731,14
+2020-06-17,Germany,188604,173599,8851
+2020-06-17,Ghana,12590,4410,66
+2020-06-17,Greece,3203,1374,187
+2020-06-17,Grenada,23,22,0
+2020-06-17,Guatemala,11251,2200,432
+2020-06-17,Guinea,4668,3364,26
+2020-06-17,Guinea-Bissau,1492,153,15
+2020-06-17,Guyana,171,102,12
+2020-06-17,Haiti,4688,24,82
+2020-06-17,Holy See,12,12,0
+2020-06-17,Honduras,10299,1116,336
+2020-06-17,Hungary,4078,2547,567
+2020-06-17,Iceland,1815,1797,10
+2020-06-17,India,366946,194325,12237
+2020-06-17,Indonesia,41431,16243,2276
+2020-06-17,Iran,195051,154812,9185
+2020-06-17,Iraq,24254,10770,773
+2020-06-17,Ireland,25341,22698,1710
+2020-06-17,Israel,19783,15459,303
+2020-06-17,Italy,237828,179455,34448
+2020-06-17,Jamaica,626,451,10
+2020-06-17,Japan,17530,15753,935
+2020-06-17,Jordan,987,693,9
+2020-06-17,Kazakhstan,15877,9920,97
+2020-06-17,Kenya,4044,1353,107
+2020-06-17,"Korea, South",12257,10800,280
+2020-06-17,Kosovo,1486,953,33
+2020-06-17,Kuwait,37533,28896,306
+2020-06-17,Kyrgyzstan,2657,1933,31
+2020-06-17,Laos,19,19,0
+2020-06-17,Latvia,1104,875,30
+2020-06-17,Lebanon,1489,907,32
+2020-06-17,Lesotho,4,2,0
+2020-06-17,Liberia,516,240,33
+2020-06-17,Libya,500,78,10
+2020-06-17,Liechtenstein,82,55,1
+2020-06-17,Lithuania,1778,1447,76
+2020-06-17,Luxembourg,4085,3935,110
+2020-06-17,MS Zaandam,9,0,2
+2020-06-17,Madagascar,1378,450,12
+2020-06-17,Malawi,572,73,6
+2020-06-17,Malaysia,8515,7873,121
+2020-06-17,Maldives,2120,1677,8
+2020-06-17,Mali,1890,1168,107
+2020-06-17,Malta,662,610,9
+2020-06-17,Mauritania,2223,427,95
+2020-06-17,Mauritius,337,325,10
+2020-06-17,Mexico,159793,118504,19080
+2020-06-17,Moldova,12732,7077,433
+2020-06-17,Monaco,99,94,4
+2020-06-17,Mongolia,201,127,0
+2020-06-17,Montenegro,333,315,9
+2020-06-17,Morocco,8997,7993,213
+2020-06-17,Mozambique,651,160,4
+2020-06-17,Namibia,36,19,0
+2020-06-17,Nepal,7177,1167,20
+2020-06-17,Netherlands,49412,186,6093
+2020-06-17,New Zealand,1507,1482,22
+2020-06-17,Nicaragua,1823,1238,64
+2020-06-17,Niger,1020,893,67
+2020-06-17,Nigeria,17735,5967,469
+2020-06-17,North Macedonia,4482,1803,210
+2020-06-17,Norway,8692,8138,243
+2020-06-17,Oman,26079,11797,116
+2020-06-17,Pakistan,160118,59215,3093
+2020-06-17,Panama,22597,13774,470
+2020-06-17,Papua New Guinea,8,8,0
+2020-06-17,Paraguay,1308,711,13
+2020-06-17,Peru,240908,128622,7257
+2020-06-17,Philippines,27238,6820,1108
+2020-06-17,Poland,30701,14921,1286
+2020-06-17,Portugal,37672,23580,1523
+2020-06-17,Qatar,83174,62172,82
+2020-06-17,Romania,22760,16117,1451
+2020-06-17,Russia,552549,303800,7468
+2020-06-17,Rwanda,639,347,2
+2020-06-17,Saint Kitts and Nevis,15,15,0
+2020-06-17,Saint Lucia,19,18,0
+2020-06-17,Saint Vincent and the Grenadines,29,25,0
+2020-06-17,San Marino,696,591,42
+2020-06-17,Sao Tome and Principe,683,188,12
+2020-06-17,Saudi Arabia,141234,91662,1091
+2020-06-17,Senegal,5369,3606,73
+2020-06-17,Serbia,12522,11697,257
+2020-06-17,Seychelles,11,11,0
+2020-06-17,Sierra Leone,1249,707,51
+2020-06-17,Singapore,41216,31938,26
+2020-06-17,Slovakia,1561,1437,28
+2020-06-17,Slovenia,1503,1359,109
+2020-06-17,Somalia,2696,685,88
+2020-06-17,South Africa,80412,44331,1674
+2020-06-17,South Sudan,1813,89,31
+2020-06-17,Spain,244683,150376,27136
+2020-06-17,Sri Lanka,1924,1397,11
+2020-06-17,Sudan,8020,2966,487
+2020-06-17,Suriname,261,48,6
+2020-06-17,Sweden,54562,0,5041
+2020-06-17,Switzerland,31187,28900,1956
+2020-06-17,Syria,178,78,7
+2020-06-17,Taiwan*,445,434,7
+2020-06-17,Tajikistan,5221,3700,51
+2020-06-17,Tanzania,509,183,21
+2020-06-17,Thailand,3135,2996,58
+2020-06-17,Timor-Leste,24,24,0
+2020-06-17,Togo,544,353,13
+2020-06-17,Trinidad and Tobago,123,109,8
+2020-06-17,Tunisia,1128,1004,50
+2020-06-17,Turkey,182727,154640,4861
+2020-06-17,US,2163290,592191,117717
+2020-06-17,Uganda,732,420,0
+2020-06-17,Ukraine,33986,15485,953
+2020-06-17,United Arab Emirates,43364,29537,295
+2020-06-17,United Kingdom,300717,1304,42238
+2020-06-17,Uruguay,849,810,24
+2020-06-17,Uzbekistan,5682,4131,19
+2020-06-17,Venezuela,3386,835,28
+2020-06-17,Vietnam,335,325,0
+2020-06-17,West Bank and Gaza,555,415,3
+2020-06-17,Western Sahara,9,8,1
+2020-06-17,Yemen,902,271,244
+2020-06-17,Zambia,1412,1142,11
+2020-06-17,Zimbabwe,401,63,4

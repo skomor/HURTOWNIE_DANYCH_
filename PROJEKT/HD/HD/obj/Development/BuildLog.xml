@@ -2,18 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>HD</Name>
-    <LastWriteTime>2020-06-16T21:30:17.069342Z</LastWriteTime>
+    <LastWriteTime>2020-06-18T21:09:23.5397318Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>Package.dtsx</Name>
-      <LastWriteTime>2020-06-14T18:55:51.3427567Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
       <Name>pierwszycorona.dtsx</Name>
-      <LastWriteTime>2020-06-16T21:30:17.0213507Z</LastWriteTime>
+      <LastWriteTime>2020-06-18T21:09:23.5098129Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
