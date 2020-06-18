@@ -1,0 +1,65 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="11b0d131-b84c-4316-82ab-447fff92a055" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Coronavirus</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>STATYSTYKI FACT</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c86c2d8b-e995-43aa-b7cd-313d66b497e9">
+          <ID>STATYSTYKI FACT</ID>
+          <Name>STATYSTYKI FACT</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c359cb05-c2c1-49cc-82d8-7e9aa40fb100">
+            <DataSourceViewID>Coronavirus</DataSourceViewID>
+            <TableID>dbo_STATYSTYKI_FACT</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>CZAS DIM</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="88f96de5-2df4-4330-9f50-287e6dc87759">
+          <ID>CZAS DIM</ID>
+          <Name>CZAS DIM</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="203ee479-bda4-488c-b970-e0f38ff48106">
+            <DataSourceViewID>Coronavirus</DataSourceViewID>
+            <TableID>dbo_CZAS_DIM</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>GEOGRAFIA DIM</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="fac45536-4f16-4d94-aba2-0cb74ecba39b">
+          <ID>GEOGRAFIA DIM</ID>
+          <Name>GEOGRAFIA DIM</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1f54bcd6-77af-46d8-bdfc-14e8539f632e">
+            <DataSourceViewID>Coronavirus</DataSourceViewID>
+            <TableID>dbo_GEOGRAFIA_DIM</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

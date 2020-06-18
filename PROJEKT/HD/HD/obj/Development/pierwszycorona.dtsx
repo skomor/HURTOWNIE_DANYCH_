@@ -1,0 +1,3737 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/14/2020 8:27:02 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-4GVPIF1"
+  DTS:CreatorName="DESKTOP-4GVPIF1\domin"
+  DTS:Description="SSIS Package Description"
+  DTS:DTSID="{89F7E6A8-9C40-4328-A991-2ED56B8B85BC}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.121"
+  DTS:LocaleID="1045"
+  DTS:MaxErrorCount="0"
+  DTS:ObjectName="pierwszycorona"
+  DTS:VersionBuild="42"
+  DTS:VersionGUID="{C858C1B7-3394-4E82-94FA-6DFAB13C0C06}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DestinationConnectionExcel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{D3A078BF-66FE-4B50-A1D2-665426F5ACF5}"
+      DTS:ObjectName="DestinationConnectionExcel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2044BD66-2D9B-4CEC-B95E-4964DCCEDE76}"
+      DTS:ObjectName="DestinationConnectionOLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-4GVPIF1\COVID;Initial Catalog=Coronavirus;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=false;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[First Delete From.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{F5F94BE0-6DA1-4C36-A429-B52F9F961A2E}"
+      DTS:ObjectName="First Delete From.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\First Delete From.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{7F57E068-CFA9-49BE-A280-3F43CE3AFF4F}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona_06_08.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{38DB1051-8475-4283-B4FB-7FB14821F38D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_or_region"
+              DTS:DTSID="{825B8FAF-3DBD-4583-B176-0C5956480E8F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="daily_new_cases"
+              DTS:DTSID="{8FF1BBD4-D1EE-41E5-9310-273FC96982A0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_cases"
+              DTS:DTSID="{C3DB3B61-4AE9-4109-9C8D-127E80C002AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_cases_prev_day"
+              DTS:DTSID="{9958F624-4CB6-439D-859A-12F5354F842D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="daily_new_deaths"
+              DTS:DTSID="{DA22654D-0620-4AE5-9065-9E15A7F5933D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_deaths"
+              DTS:DTSID="{843E7B77-6CA5-4209-A1D5-E444D5476FD5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_deaths_prev_day"
+              DTS:DTSID="{EB6091F6-77E6-41DA-9F90-A2EEB00B90C5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="data_source"
+              DTS:DTSID="{FDB71C1E-8B39-47D5-9701-7C06476F11F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lat"
+              DTS:DTSID="{D2598E2C-9076-4E7E-B634-DAF9739FD217}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="long"
+              DTS:DTSID="{DC4D675C-BA1C-4C09-BE01-69840C0829F2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="first_case_country_rank"
+              DTS:DTSID="{F7011D16-C1D9-486B-BDDA-0067F49A527C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="hundred_case_country_rank"
+              DTS:DTSID="{02115A27-9C73-43A3-BFC4-2ABA534D46D7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_code_2"
+              DTS:DTSID="{AAF6F724-E146-4E11-ADBD-18719578054E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_code_3"
+              DTS:DTSID="{7E4C84A6-1E8E-420D-B196-396ECEC383A0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_population_2018"
+              DTS:DTSID="{E6899B16-6D2B-49A6-9935-8E8A96FB1760}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_median_age"
+              DTS:DTSID="{D1E2BE06-BFEF-4FF8-A447-B2E6D0FC2672}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_running_agg"
+              DTS:DTSID="{C2328CF8-5742-4945-B76D-19464F4E2BE4}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager Corona]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{22BEB836-6588-4AEE-9492-215F47F07118}"
+      DTS:ObjectName="Flat File Connection Manager Corona">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona_06_14.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{EE3C1C76-D03A-4A66-894C-07A6FA71093B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_or_region"
+              DTS:DTSID="{ECAEA531-349B-434B-AD33-A10E867CD75D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="daily_new_cases"
+              DTS:DTSID="{912BE2C6-1EED-434F-A50C-E0F006BD7067}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_cases"
+              DTS:DTSID="{015ECA7A-AF45-4E61-853A-06EA401208EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_cases_prev_day"
+              DTS:DTSID="{98EAE781-B1A9-4E4D-9AB8-3506526B02A9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="daily_new_deaths"
+              DTS:DTSID="{94CFDEA7-05DD-41E9-BB15-571DF582279A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_deaths"
+              DTS:DTSID="{AF02EB03-1D96-4D9A-ACA4-299B03C64B03}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_deaths_prev_day"
+              DTS:DTSID="{C168D290-3A58-49D0-8896-8F0F7E8D11A6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="data_source"
+              DTS:DTSID="{A51D9026-230F-4866-8467-C007A10B89B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lat"
+              DTS:DTSID="{D3A0163B-2404-4836-A2E1-D77592E8C7E1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="long"
+              DTS:DTSID="{6DE78853-DA98-4A39-B65C-5B66E9C69BB0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="first_case_country_rank"
+              DTS:DTSID="{7B056345-98A5-4E02-BF62-909E3829CC0E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="hundred_case_country_rank"
+              DTS:DTSID="{61F8EC52-1FE6-46D5-90E3-3319EEAA24B2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_code_2"
+              DTS:DTSID="{0D0134FB-FE5D-4DB2-8449-7BB367762675}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_code_3"
+              DTS:DTSID="{2DEC89A9-6584-4D93-BD25-8CF6979F7EAF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_population_2018"
+              DTS:DTSID="{154C0938-93BE-4E15-A217-54ABDC76ADA9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_median_age"
+              DTS:DTSID="{F765EF6A-B9E1-44B5-98A9-0AA95E9A8D67}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_running_agg"
+              DTS:DTSID="{54D56D66-3048-45FD-9282-074F45DA4756}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager Corona recovered]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{43FE3E6B-3179-4B21-82D4-AE166EEADB9D}"
+      DTS:ObjectName="Flat File Connection Manager Corona recovered">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona_rec_06_14.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{AEB743CF-CD38-48DC-A017-4C46365BFCDD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{A1789EDB-4752-4600-82D5-9F7DC8E165DE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Confirmed"
+              DTS:DTSID="{7C3264DF-911A-4703-BE41-C7786F306EC4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Recovered"
+              DTS:DTSID="{E6372B74-D18E-4567-902C-4E7CBC0940B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Deaths"
+              DTS:DTSID="{A8C55FE0-B77B-4A2D-88C5-6D161B243003}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager Facts]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9058A540-4A3E-40C1-855B-F0DA32C1C28A}"
+      DTS:ObjectName="Flat File Connection Manager Facts">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona_06_08.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{B66A15EC-A18E-42BF-8B8B-DC5E3CE9FA10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_or_region"
+              DTS:DTSID="{F1668992-F22E-4AB1-92E4-111944B6C88A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="daily_new_cases"
+              DTS:DTSID="{06CD8561-E0C6-400F-96AF-1FE88C660678}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_cases"
+              DTS:DTSID="{245F9D9C-74E4-4262-827C-EDCC73CA0B23}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_cases_prev_day"
+              DTS:DTSID="{2221F568-B346-4335-9715-4173842AF289}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="daily_new_deaths"
+              DTS:DTSID="{5B2BD91E-C0B1-4E60-8046-30096BD445DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_deaths"
+              DTS:DTSID="{62CC31EC-110C-4262-8C28-882388288000}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_deaths_prev_day"
+              DTS:DTSID="{4C63A427-BCFD-4D60-99E1-D37F9545CB81}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="data_source"
+              DTS:DTSID="{E7321C2D-2530-466C-8660-03BEB3CF776A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lat"
+              DTS:DTSID="{5F2B735E-7E58-4D23-BAF3-CD76A70AE72C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="long"
+              DTS:DTSID="{EA456826-B373-424E-BDA1-68B46502B25B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="first_case_country_rank"
+              DTS:DTSID="{769D781E-7BC2-4ABE-A457-4BE09AC5BA8C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="hundred_case_country_rank"
+              DTS:DTSID="{C5C54118-C94E-46B8-BE75-6F9EEFC0F654}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_code_2"
+              DTS:DTSID="{D0BF3B86-C440-46C8-B2C4-AB5DF15230E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_code_3"
+              DTS:DTSID="{37041E9A-1E17-42E4-8C5E-2F7CB41E440F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_population_2018"
+              DTS:DTSID="{D9DDEB71-25C8-4911-B8F9-0DEBAC1E322A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_median_age"
+              DTS:DTSID="{3CF7EC39-512F-4D0D-886B-5C0CB7D3DCF3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_running_agg"
+              DTS:DTSID="{C061A774-528A-4173-BC37-49FCAC414A80}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager Geografia]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B7D03426-483F-46F5-884E-7DC071B41B3E}"
+      DTS:ObjectName="Flat File Connection Manager Geografia">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\Geography.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Continent"
+              DTS:DTSID="{A63AA623-F195-4EFA-8845-991A1170CA9C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{279B42F8-0A1F-4A7F-81CF-4E90A8972B3F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Population"
+              DTS:DTSID="{CBDF4EF6-5049-4DB7-A797-CE73A092C8D5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GDP"
+              DTS:DTSID="{290EEAEF-0A91-4C9D-BD3C-2F5C9988A49D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager Geography]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{29AC3E45-464A-4E11-B382-2443FA286D4C}"
+      DTS:ObjectName="Flat File Connection Manager Geography">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\Geography.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Continent"
+              DTS:DTSID="{86AB1641-7313-412E-8383-999C78EEF37D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{E9A97223-6AE2-42BD-A25B-D7BAF89954A1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Population"
+              DTS:DTSID="{190B6F84-A0DA-47B0-B8B6-A3E38AB0DB60}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GDP"
+              DTS:DTSID="{800E42EA-C2C4-435A-BE51-785BECA8F833}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Geografia]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{380F4D4F-94C8-44DA-A9D5-3F975FEFF340}"
+      DTS:ObjectName="Geografia">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\geografia.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Continent"
+              DTS:DTSID="{CECCB3F2-8767-4E56-B540-CF6B64DDE16D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{92323467-BB4F-410B-9D89-DDE1FA612166}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Population"
+              DTS:DTSID="{98805904-431B-401B-BCD9-29EDE8800587}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GDP"
+              DTS:DTSID="{893CE49D-E3DF-47FC-89E8-0D3FA36C8775}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Insert_czas_dim.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{8B829F0A-C22C-42EC-B561-DDE83113A03B}"
+      DTS:ObjectName="Insert_czas_dim.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\Insert_czas_dim.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Load Corona]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{96D26929-1F05-407B-B349-ACD201B24464}"
+      DTS:ObjectName="Load Corona">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{CA9E42F1-C003-471E-A42A-B3D6FB252315}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_or_region"
+              DTS:DTSID="{AB32278B-BD23-49F7-BE2F-954A28ABA00D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="daily_new_cases"
+              DTS:DTSID="{417D8522-FABD-4B9D-A0A2-8629A1C77651}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_cases"
+              DTS:DTSID="{4FCB7F23-8BD6-4A2C-8F20-1486ED42ED8A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_cases_prev_day"
+              DTS:DTSID="{6E21A50B-0A8F-4FA2-9B50-797CCAA38BF6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="daily_new_deaths"
+              DTS:DTSID="{1CF92890-2C95-4ACA-A93C-96317A570051}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_deaths"
+              DTS:DTSID="{98244E2B-8B6C-482E-A176-7F7BAF40000F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_deaths_prev_day"
+              DTS:DTSID="{8D2C8BE8-050C-49DE-B042-4FA9930B15CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="data_source"
+              DTS:DTSID="{4A345CCB-FDC8-4406-9470-3448B31E6C33}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lat"
+              DTS:DTSID="{649E873C-8FE9-47E3-84C7-955A523E6FF8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="long"
+              DTS:DTSID="{5051BE55-E280-4B4B-A802-06C62C670034}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="first_case_country_rank"
+              DTS:DTSID="{19A200CE-FD22-456D-B074-A5A97A681005}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="hundred_case_country_rank"
+              DTS:DTSID="{51FBF912-7C26-4617-AC72-8EF9BE7F034E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_code_2"
+              DTS:DTSID="{CD2A9191-8835-4250-A497-276FF73E75A4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_code_3"
+              DTS:DTSID="{813AAD94-1B04-46D4-9B22-6F4F0432B959}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_population_2018"
+              DTS:DTSID="{635DC4A4-1693-4C1A-8B5F-904724393EEF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_median_age"
+              DTS:DTSID="{55AD419F-B380-4EE8-AA0B-174FB3CE101B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_running_agg"
+              DTS:DTSID="{D8EFA320-355D-4FB8-974F-6BE6D90420D0}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Load Corona Rec]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B4ACE717-5F24-43BE-8805-C94654CABDAF}"
+      DTS:ObjectName="Load Corona Rec">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona_rec.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{67795AA1-4B80-45AD-BC7F-4B6641894A17}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{0BE59031-5280-477C-9F97-8026F5393976}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Confirmed"
+              DTS:DTSID="{77353700-E431-47CE-BADC-5828A0C3EAD5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Recovered"
+              DTS:DTSID="{344CEA38-5502-480B-A275-C0E441267042}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Deaths"
+              DTS:DTSID="{950FDBBC-27CE-4262-9D60-30ED73AAEA65}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Load Geografia]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{440D63AE-F31D-4BF0-B853-077FC53C988E}"
+      DTS:ObjectName="Load Geografia">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\geografia.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Continent"
+              DTS:DTSID="{088BB70E-5379-4969-9EB6-880B8FAC5DE8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{0F7A6459-AE17-4A93-9AB3-55E12CF157E3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Population"
+              DTS:DTSID="{51F4822B-8FCE-4879-8652-6FE0A8E0FF10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GDP"
+              DTS:DTSID="{75D0BF69-F6CB-4526-8E76-EE230343EBA0}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SourceConnectionExcel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{9037A488-C5D3-4442-9198-246CF9B88C2D}"
+      DTS:ObjectName="SourceConnectionExcel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SourceConnectionFlatFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{1832DB21-7B3C-4485-9A39-592ED8F27D71}"
+      DTS:ObjectName="SourceConnectionFlatFile">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\corona_06_08.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{AFFE9F80-7F90-432C-85A6-DE1E76996CC8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_or_region"
+              DTS:DTSID="{A44A0B4D-66F1-4E84-9D86-F09F4213396C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="daily_new_cases"
+              DTS:DTSID="{9CE44464-8D7F-453B-89BC-8130603291DD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_cases"
+              DTS:DTSID="{1018B4A4-6740-4C84-859B-90AD8A7F299C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_cases_prev_day"
+              DTS:DTSID="{AADDBFEA-BF0A-43CB-98C4-E28862E4BB87}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="daily_new_deaths"
+              DTS:DTSID="{9C95C89B-B81D-4D02-BA1D-BE59F59D359E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_deaths"
+              DTS:DTSID="{1453021B-1E13-45A1-BEC3-5EA4E856624F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="running_total_deaths_prev_day"
+              DTS:DTSID="{6DE33DA1-8E60-4516-9B47-A313B8E0AC61}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="data_source"
+              DTS:DTSID="{3FC85EA7-E9FB-464D-8AA9-00D0E9988BB2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lat"
+              DTS:DTSID="{07AF918A-206A-4152-B714-5A8083AD1C19}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="long"
+              DTS:DTSID="{862BFD82-B531-4B05-A0C8-B0C60013B213}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="first_case_country_rank"
+              DTS:DTSID="{13828400-CBE9-4CFC-A197-358C62AF4F2E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="hundred_case_country_rank"
+              DTS:DTSID="{FB536EAD-29DB-4060-B870-4B270941964B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_code_2"
+              DTS:DTSID="{ED260117-A250-44A4-89BC-5B2B0DDA8441}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_code_3"
+              DTS:DTSID="{A6CCD35E-F6ED-446C-ADB9-9FD2CD5B0A21}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_population_2018"
+              DTS:DTSID="{F6BF77C9-3218-4482-909A-621B662D9DCC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_median_age"
+              DTS:DTSID="{41246DA7-7543-4F8A-BAFC-FF45E354027D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_running_agg"
+              DTS:DTSID="{04E4F147-30A1-4D74-97B0-44F531C620D1}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Wyzdrowiali.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{7981FE60-7E04-4EF6-8A72-80819C7E23BE}"
+      DTS:ObjectName="Wyzdrowiali.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\domin\Studia\sem 6\HD\PROJEKT\Wyzdrowiali.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Czyszczenie stage"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{9BEB4CA1-DB05-42D9-B257-7607ADE69B9C}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Czyszczenie stage"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{2044BD66-2D9B-4CEC-B95E-4964DCCEDE76}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="First Delete From.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute Process Task"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{3B7945AB-FF5C-4462-B605-03838FE568F3}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute Process Task"
+      DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Users\domin\Studia\sem 6\HD\PROJEKT\usuwanie.exe"
+          WorkingDirectory="C:\Users\domin\Studia\sem 6\HD\PROJEKT" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{C008103C-A44D-476D-86E0-BEC469235540}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{2044BD66-2D9B-4CEC-B95E-4964DCCEDE76}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="Wyzdrowiali.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Wypelnienie CZAS_DIM"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5BBE44D1-A1EA-4A85-8AB5-A619D30C822D}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Wypelnienie CZAS_DIM"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{2044BD66-2D9B-4CEC-B95E-4964DCCEDE76}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="Insert_czas_dim.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Zaladowanie Corona Stage"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{66EB85A8-289A-4F1B-A921-66B5BFD08803}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Zaladowanie Corona Stage"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Zaladowanie Corona Stage\Flat File Source 1"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Flat File Source 1"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Load Corona]"
+                  connectionManagerRefId="Package.ConnectionManagers[Load Corona]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[date]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[date]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[date]"
+                      name="date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_or_region]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[country_or_region]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_or_region]"
+                      name="country_or_region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[daily_new_cases]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[daily_new_cases]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[daily_new_cases]"
+                      name="daily_new_cases"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[running_total_cases]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[running_total_cases]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[running_total_cases]"
+                      name="running_total_cases"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[running_total_cases_prev_day]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[running_total_cases_prev_day]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[running_total_cases_prev_day]"
+                      name="running_total_cases_prev_day"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[daily_new_deaths]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[daily_new_deaths]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[daily_new_deaths]"
+                      name="daily_new_deaths"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[running_total_deaths]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[running_total_deaths]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[running_total_deaths]"
+                      name="running_total_deaths"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[running_total_deaths_prev_day]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[running_total_deaths_prev_day]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[running_total_deaths_prev_day]"
+                      name="running_total_deaths_prev_day"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[data_source]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[data_source]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[data_source]"
+                      name="data_source"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[lat]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[lat]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[lat]"
+                      name="lat"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[long]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[long]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[long]"
+                      name="long"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[first_case_country_rank]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[first_case_country_rank]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[first_case_country_rank]"
+                      name="first_case_country_rank"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[hundred_case_country_rank]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[hundred_case_country_rank]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[hundred_case_country_rank]"
+                      name="hundred_case_country_rank"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_code_2]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[country_code_2]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_code_2]"
+                      name="country_code_2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_code_3]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[country_code_3]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_code_3]"
+                      name="country_code_3"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_population_2018]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[country_population_2018]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_population_2018]"
+                      name="country_population_2018"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_median_age]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[country_median_age]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_median_age]"
+                      name="country_median_age"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_running_agg]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[country_running_agg]"
+                      length="50"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_running_agg]"
+                      name="country_running_agg"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[date]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[country_or_region]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="country_or_region" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[daily_new_cases]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="daily_new_cases" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[running_total_cases]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="running_total_cases" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[running_total_cases_prev_day]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="running_total_cases_prev_day" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[daily_new_deaths]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="daily_new_deaths" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[running_total_deaths]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="running_total_deaths" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[running_total_deaths_prev_day]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="running_total_deaths_prev_day" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[data_source]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="data_source" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[lat]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="lat" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[long]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="long" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[first_case_country_rank]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="first_case_country_rank" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[hundred_case_country_rank]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="hundred_case_country_rank" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[country_code_2]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="country_code_2" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[country_code_3]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="country_code_3" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[country_population_2018]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="country_population_2018" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[country_median_age]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="country_median_age" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].ExternalColumns[country_running_agg]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="country_running_agg" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Zaladowanie Corona Stage\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[FILE_CORONA_STAGE]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[date]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="date"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[date]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[country_or_region]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="country_or_region"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_or_region]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_or_region]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[data_source]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="data_source"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[data_source]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[data_source]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[lat]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="lat"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[lat]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[lat]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[long]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="long"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[long]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[long]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[first_case_country_rank]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="first_case_country_rank"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[first_case_country_rank]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[first_case_country_rank]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[hundred_case_country_rank]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="hundred_case_country_rank"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[hundred_case_country_rank]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[hundred_case_country_rank]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[country_code_2]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="country_code_2"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_code_2]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_code_2]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[country_code_3]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="country_code_3"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_code_3]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_code_3]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[country_population_2018]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="country_population_2018"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_population_2018]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_population_2018]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[country_median_age]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="country_median_age"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_median_age]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_median_age]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[country_running_agg]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="country_running_agg"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_running_agg]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[country_running_agg]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[daily_new_cases]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="daily_new_cases"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[daily_new_cases]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[daily_new_cases]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[running_total_cases]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="running_total_cases"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[running_total_cases]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[running_total_cases]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[running_total_cases_prev_day]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="running_total_cases_prev_day"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[running_total_cases_prev_day]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[running_total_cases_prev_day]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[daily_new_deaths]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="daily_new_deaths"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[daily_new_deaths]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[daily_new_deaths]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[running_total_deaths]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="running_total_deaths"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[running_total_deaths]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[running_total_deaths]" />
+                    <inputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[running_total_deaths_prev_day]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="running_total_deaths_prev_day"
+                      externalMetadataColumnId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[running_total_deaths_prev_day]"
+                      lineageId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output].Columns[running_total_deaths_prev_day]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_or_region]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="country_or_region" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[daily_new_cases]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="daily_new_cases" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[running_total_cases]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="running_total_cases" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[running_total_cases_prev_day]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="running_total_cases_prev_day" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[daily_new_deaths]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="daily_new_deaths" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[running_total_deaths]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="running_total_deaths" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[running_total_deaths_prev_day]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="running_total_deaths_prev_day" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[data_source]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="data_source" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[lat]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="lat" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[long]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="long" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[first_case_country_rank]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="first_case_country_rank" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[hundred_case_country_rank]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="hundred_case_country_rank" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_code_2]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="country_code_2" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_code_3]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="country_code_3" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_population_2018]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="country_population_2018" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_median_age]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="country_median_age" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_running_agg]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="country_running_agg" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[recovered]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="recovered" />
+                    <externalMetadataColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="id" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Zaladowanie Corona Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Zaladowanie Corona Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Zaladowanie Corona Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Zaladowanie Corona Stage.Paths[Flat File Source Output]"
+              endId="Package\Zaladowanie Corona Stage\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Zaladowanie Corona Stage\Flat File Source 1.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Załadaowanie Corona Stage Recovered"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{109E08BD-6B8D-485E-A5F8-D5F41AE4D9EB}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Załadaowanie Corona Stage Recovered"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Load Corona Rec]"
+                  connectionManagerRefId="Package.ConnectionManagers[Load Corona Rec]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      length="50"
+                      lineageId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      length="50"
+                      lineageId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
+                      name="Country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].Columns[Confirmed]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Confirmed]"
+                      length="50"
+                      lineageId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].Columns[Confirmed]"
+                      name="Confirmed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].Columns[Recovered]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Recovered]"
+                      length="50"
+                      lineageId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].Columns[Recovered]"
+                      name="Recovered"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].Columns[Deaths]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Deaths]"
+                      length="50"
+                      lineageId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].Columns[Deaths]"
+                      name="Deaths"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Confirmed]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Confirmed" />
+                    <externalMetadataColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Recovered]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Recovered" />
+                    <externalMetadataColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Deaths]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Deaths" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[FILE_CORONA_REC_STAGE]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Country]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Country"
+                      externalMetadataColumnId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country]"
+                      lineageId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].Columns[Country]" />
+                    <inputColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Date"
+                      externalMetadataColumnId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
+                      lineageId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Confirmed]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Confirmed"
+                      externalMetadataColumnId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[confirmed]"
+                      lineageId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].Columns[Confirmed]" />
+                    <inputColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Recovered]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Recovered"
+                      externalMetadataColumnId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[recovered]"
+                      lineageId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].Columns[Recovered]" />
+                    <inputColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Deaths]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Deaths"
+                      externalMetadataColumnId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[deaths]"
+                      lineageId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output].Columns[Deaths]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[confirmed]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="confirmed" />
+                    <externalMetadataColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[recovered]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="recovered" />
+                    <externalMetadataColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[deaths]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="deaths" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Załadaowanie Corona Stage Recovered.Paths[Flat File Source Output]"
+              endId="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Załadaowanie Corona Stage Recovered\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Załadowanie geogarfia"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{8DF889FE-C549-4143-8C3B-6D99E233C77A}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Załadowanie geogarfia"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Załadowanie geogarfia\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Załadowanie geogarfia\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Load Geografia]"
+                  connectionManagerRefId="Package.ConnectionManagers[Load Geografia]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Continent]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Continent]"
+                      length="50"
+                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Continent]"
+                      name="Continent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      length="50"
+                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Country]"
+                      name="Country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Population]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Population]"
+                      length="50"
+                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Population]"
+                      name="Population"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[GDP]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GDP]"
+                      length="50"
+                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[GDP]"
+                      name="GDP"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Continent]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Continent" />
+                    <externalMetadataColumn
+                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Population]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Population" />
+                    <externalMetadataColumn
+                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GDP]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="GDP" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Załadowanie geogarfia\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[GEOGRAFIA_DIM]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Załadowanie geogarfia\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Continent]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Continent"
+                      externalMetadataColumnId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kontynent]"
+                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Continent]" />
+                    <inputColumn
+                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Country]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Country"
+                      externalMetadataColumnId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kraj]"
+                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Country]" />
+                    <inputColumn
+                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Population]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Population"
+                      externalMetadataColumnId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[populacja]"
+                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[Population]" />
+                    <inputColumn
+                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[GDP]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="GDP"
+                      externalMetadataColumnId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pkb]"
+                      lineageId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output].Columns[GDP]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kontynent]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="kontynent" />
+                    <externalMetadataColumn
+                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kraj]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="kraj" />
+                    <externalMetadataColumn
+                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[populacja]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="populacja" />
+                    <externalMetadataColumn
+                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pkb]"
+                      codePage="1250"
+                      dataType="str"
+                      length="255"
+                      name="pkb" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Załadowanie geogarfia\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Załadowanie geogarfia\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Załadowanie geogarfia\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Załadowanie geogarfia\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Załadowanie geogarfia.Paths[Flat File Source Output]"
+              endId="Package\Załadowanie geogarfia\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Załadowanie geogarfia\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{4E051599-810A-4626-BA8A-3C576D5582A6}"
+      DTS:From="Package\Czyszczenie stage"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Wypelnienie CZAS_DIM" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{87E8C19F-D2B4-4770-96FB-690C8C784A5B}"
+      DTS:From="Package\Execute Process Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Czyszczenie stage" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{A6648081-DBB1-42E4-B5BF-CFAE69170908}"
+      DTS:From="Package\Załadaowanie Corona Stage Recovered"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Execute SQL Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{27CE1CA4-9358-4EAC-A054-A6B7CFC214BF}"
+      DTS:From="Package\Czyszczenie stage"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Zaladowanie Corona Stage" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{84B4E94B-C5C0-4E8B-ADB1-FDB1634EEF99}"
+      DTS:From="Package\Czyszczenie stage"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Załadaowanie Corona Stage Recovered" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{AA082471-AA55-42C0-B457-399EDB21E223}"
+      DTS:From="Package\Czyszczenie stage"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Załadowanie geogarfia" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{887E80BB-BBA6-401A-B5BE-79D61C2DD71E}"
+      DTS:From="Package\Załadowanie geogarfia"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Execute SQL Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{5C55154A-B5ED-421F-8C62-ECACFF2984DB}"
+      DTS:From="Package\Wypelnienie CZAS_DIM"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\Execute SQL Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
+      DTS:CreationName=""
+      DTS:DTSID="{91B5EF7D-5530-4400-9654-7FD094E9A2BD}"
+      DTS:From="Package\Zaladowanie Corona Stage"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 8"
+      DTS:To="Package\Execute SQL Task" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Czyszczenie stage"
+          TopLeft="534,99" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Execute Process Task"
+          TopLeft="526,14" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="528,365" />
+        <NodeLayout
+          Size="189,42"
+          Id="Package\Wypelnienie CZAS_DIM"
+          TopLeft="915,227" />
+        <NodeLayout
+          Size="204,42"
+          Id="Package\Zaladowanie Corona Stage"
+          TopLeft="118,224" />
+        <NodeLayout
+          Size="263,42"
+          Id="Package\Załadaowanie Corona Stage Recovered"
+          TopLeft="347,225" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Załadowanie geogarfia"
+          TopLeft="645,227" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="662,141">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="347.5,86"
+              Start="0,0"
+              End="347.5,78.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.8369098712446" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.8369098712446"
+                    Point2="0,25.8369098712446"
+                    Point3="4,25.8369098712446" />
+                  <mssgle:LineSegment
+                    End="343.5,25.8369098712446" />
+                  <mssgle:CubicBezierSegment
+                    Point1="343.5,25.8369098712446"
+                    Point2="347.5,25.8369098712446"
+                    Point3="347.5,29.8369098712446" />
+                  <mssgle:LineSegment
+                    End="347.5,78.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="615.75,56">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="478.5,267">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="115.5,98"
+              Start="0,0"
+              End="115.5,90.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.1491525423729" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,50.1491525423729"
+                    Point2="0,54.1491525423729"
+                    Point3="4,54.1491525423729" />
+                  <mssgle:LineSegment
+                    End="111.5,54.1491525423729" />
+                  <mssgle:CubicBezierSegment
+                    Point1="111.5,54.1491525423729"
+                    Point2="115.5,54.1491525423729"
+                    Point3="115.5,58.1491525423729" />
+                  <mssgle:LineSegment
+                    End="115.5,90.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="569,141">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-349,83"
+              Start="0,0"
+              End="-349,75.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.9356223175966" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.9356223175966"
+                    Point2="0,24.9356223175966"
+                    Point3="-4,24.9356223175966" />
+                  <mssgle:LineSegment
+                    End="-345,24.9356223175966" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-345,24.9356223175966"
+                    Point2="-349,24.9356223175966"
+                    Point3="-349,28.9356223175966" />
+                  <mssgle:LineSegment
+                    End="-349,75.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="600,141">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-121.5,84"
+              Start="0,0"
+              End="-121.5,76.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5864406779661" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.5864406779661"
+                    Point2="0,37.5864406779661"
+                    Point3="-4,37.5864406779661" />
+                  <mssgle:LineSegment
+                    End="-117.5,37.5864406779661" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-117.5,37.5864406779661"
+                    Point2="-121.5,37.5864406779661"
+                    Point3="-121.5,41.5864406779661" />
+                  <mssgle:LineSegment
+                    End="-121.5,76.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="631,141">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="107,86"
+              Start="0,0"
+              End="107,78.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.4813559322034" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.4813559322034"
+                    Point2="0,38.4813559322034"
+                    Point3="4,38.4813559322034" />
+                  <mssgle:LineSegment
+                    End="103,38.4813559322034" />
+                  <mssgle:CubicBezierSegment
+                    Point1="103,38.4813559322034"
+                    Point2="107,38.4813559322034"
+                    Point3="107,42.4813559322034" />
+                  <mssgle:LineSegment
+                    End="107,78.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="738,269">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-113,96"
+              Start="0,0"
+              End="-113,88.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.0440677966102" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,49.0440677966102"
+                    Point2="0,53.0440677966102"
+                    Point3="-4,53.0440677966102" />
+                  <mssgle:LineSegment
+                    End="-109,53.0440677966102" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-109,53.0440677966102"
+                    Point2="-113,53.0440677966102"
+                    Point3="-113,57.0440677966102" />
+                  <mssgle:LineSegment
+                    End="-113,88.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="1009.5,269">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-353.5,96"
+              Start="0,0"
+              End="-353.5,88.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63.1587982832618" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,63.1587982832618"
+                    Point2="0,67.1587982832618"
+                    Point3="-4,67.1587982832618" />
+                  <mssgle:LineSegment
+                    End="-349.5,67.1587982832618" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-349.5,67.1587982832618"
+                    Point2="-353.5,67.1587982832618"
+                    Point3="-353.5,71.1587982832618" />
+                  <mssgle:LineSegment
+                    End="-353.5,88.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 8]"
+          TopLeft="220,266">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="343,99"
+              Start="0,0"
+              End="343,91.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.2575107296137" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,65.2575107296137"
+                    Point2="0,69.2575107296137"
+                    Point3="4,69.2575107296137" />
+                  <mssgle:LineSegment
+                    End="339,69.2575107296137" />
+                  <mssgle:CubicBezierSegment
+                    Point1="339,69.2575107296137"
+                    Point2="343,69.2575107296137"
+                    Point3="343,73.2575107296137" />
+                  <mssgle:LineSegment
+                    End="343,91.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Zaladowanie Corona Stage">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Zaladowanie Corona Stage\OLE DB Destination"
+          TopLeft="189,178" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Zaladowanie Corona Stage\Flat File Source 1"
+          TopLeft="185,94" />
+        <EdgeLayout
+          Id="Package\Zaladowanie Corona Stage.Paths[Flat File Source Output]"
+          TopLeft="265,136">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.5,42"
+              Start="0,0"
+              End="9.5,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17"
+                    Point2="0,21"
+                    Point3="4,21" />
+                  <mssgle:LineSegment
+                    End="5.5,21" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.5,21"
+                    Point2="9.5,21"
+                    Point3="9.5,25" />
+                  <mssgle:LineSegment
+                    End="9.5,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Zaladowanie Corona Stage\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Załadaowanie Corona Stage Recovered">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination"
+          TopLeft="199,302" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Załadaowanie Corona Stage Recovered\Flat File Source"
+          TopLeft="205,81" />
+        <EdgeLayout
+          Id="Package\Załadaowanie Corona Stage Recovered.Paths[Flat File Source Output]"
+          TopLeft="282.5,123">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,179"
+              Start="0,0"
+              End="0,171.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,171.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Załadaowanie Corona Stage Recovered\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Załadowanie geogarfia">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Załadowanie geogarfia\OLE DB Destination"
+          TopLeft="296,230" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Załadowanie geogarfia\Flat File Source"
+          TopLeft="297,72" />
+        <EdgeLayout
+          Id="Package\Załadowanie geogarfia.Paths[Flat File Source Output]"
+          TopLeft="372.5,114">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9,116"
+              Start="0,0"
+              End="9,108.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,54"
+                    Point2="0,58"
+                    Point3="4,58" />
+                  <mssgle:LineSegment
+                    End="5,58" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5,58"
+                    Point2="9,58"
+                    Point3="9,62" />
+                  <mssgle:LineSegment
+                    End="9,108.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Załadowanie geogarfia\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
