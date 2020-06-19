@@ -11,13 +11,11 @@ UPDATE       FILE_CORONA_REC_STAGE
 SET deaths=0
 where deaths = '';
 
-ALTER TABLE FILE_CORONA_REC_STAGE
-DROP COLUMN id;
 
 
 use Coronavirus
 delete from FILE_CORONA_REC_STAGE
-delete from FILE_CORONA_STAGE
+
 
 
 ;
