@@ -1,0 +1,164 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1fff3047-3c61-49b1-aeaa-25480485508e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Coronavirus</ID>
+  <Name>Coronavirus</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Coronavirus</DataSourceID>
+  <Schema>
+    <xs:schema id="Coronavirus" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Coronavirus" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e336e360-0094-4697-a837-f8a47668b1aa">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_STATYSTYKI_FACT" msprop:design-time-name="c47e85f3-954a-4d4c-addf-64cded5681ce" msprop:DbTableName="STATYSTYKI_FACT" msprop:FriendlyName="STATYSTYKI_FACT" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_statystyki" msprop:design-time-name="198817d4-881f-4993-84e0-a704b1548024" msprop:DbColumnName="id_statystyki" msprop:FriendlyName="id_statystyki">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_czas" msprop:design-time-name="0ffa9e8b-5079-4f0b-8f55-2e76f9fed28f" msprop:DbColumnName="id_czas" msprop:FriendlyName="id_czas" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="kraj" msprop:design-time-name="9a6f771c-af83-4090-bda0-6d4ceeeea39c" msprop:DbColumnName="kraj" msprop:FriendlyName="kraj" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="liczba_zakazen" msprop:design-time-name="eae6c8be-21fa-4709-a176-11d9fa0b5410" msprop:DbColumnName="liczba_zakazen" msprop:FriendlyName="liczba_zakazen" type="xs:long" minOccurs="0" />
+                  <xs:element name="liczba_zgonow" msprop:design-time-name="3fb6b67d-14c9-4baf-85c0-da98c0614089" msprop:DbColumnName="liczba_zgonow" msprop:FriendlyName="liczba_zgonow" type="xs:long" minOccurs="0" />
+                  <xs:element name="nowe_przypadki" msprop:design-time-name="62c1001e-a77f-439b-a726-ddbbefaefb80" msprop:DbColumnName="nowe_przypadki" msprop:FriendlyName="nowe_przypadki" type="xs:long" minOccurs="0" />
+                  <xs:element name="wyzdrowiali" msprop:design-time-name="3ec98379-11b5-40cf-88ef-c469b5be7795" msprop:DbColumnName="wyzdrowiali" msprop:FriendlyName="wyzdrowiali" type="xs:long" minOccurs="0" />
+                  <xs:element name="aktywne_przypadki" msprop:design-time-name="790c1d1a-7898-42f0-80c4-b787ba136eb3" msprop:DbColumnName="aktywne_przypadki" msprop:FriendlyName="aktywne_przypadki" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_CZAS_DIM" msprop:design-time-name="eaed5b08-8353-422e-8a56-2f5035ec8111" msprop:DbTableName="CZAS_DIM" msprop:FriendlyName="CZAS_DIM" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_czas" msprop:design-time-name="f0f8708b-f834-4762-95ef-0edfa3ccc17c" msprop:DbColumnName="id_czas" msprop:FriendlyName="id_czas" type="xs:int" minOccurs="0" />
+                  <xs:element name="data" msprop:design-time-name="f4771ae0-edc1-45f6-a8e9-730cb2731da9" msprop:DbColumnName="data" msprop:FriendlyName="data">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="dzien" msprop:design-time-name="cb5e7ae6-31a5-4175-8755-526d479e7861" msprop:DbColumnName="dzien" msprop:FriendlyName="dzien" type="xs:int" minOccurs="0" />
+                  <xs:element name="miesiac_nazwa" msprop:design-time-name="62b255a0-5578-46a5-824e-4e2f60f3a292" msprop:DbColumnName="miesiac_nazwa" msprop:FriendlyName="miesiac_nazwa" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="miesiac" msprop:design-time-name="2b32a359-4bfa-4d55-aebf-9f3a23c0dbed" msprop:DbColumnName="miesiac" msprop:FriendlyName="miesiac" type="xs:int" minOccurs="0" />
+                  <xs:element name="rok" msprop:design-time-name="7d97a1e5-edc6-4ccc-80d2-236018241bdd" msprop:DbColumnName="rok" msprop:FriendlyName="rok" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_GEOGRAFIA_DIM" msprop:design-time-name="363f1c8f-6943-4859-b10d-3d77a3398ae3" msprop:DbTableName="GEOGRAFIA_DIM" msprop:FriendlyName="GEOGRAFIA_DIM" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="kontynent" msprop:design-time-name="391bf8e5-3fbc-4e58-965a-2eb2edb31c7d" msprop:DbColumnName="kontynent" msprop:FriendlyName="kontynent" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="kraj" msprop:design-time-name="0ee6861e-3a70-488a-b809-797969c08594" msprop:DbColumnName="kraj" msprop:FriendlyName="kraj">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="populacja" msprop:design-time-name="2cafb5a6-220f-4b96-92ba-32bb3581cd8c" msprop:DbColumnName="populacja" msprop:FriendlyName="populacja" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="pkb" msprop:design-time-name="9cd71d93-fccb-45ea-a44a-0791b3c5a36b" msprop:DbColumnName="pkb" msprop:FriendlyName="pkb" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_STATYSTYKI_FACT" />
+          <xs:field xpath="id_statystyki" />
+        </xs:unique>
+        <xs:unique name="dbo_CZAS_DIM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_CZAS_DIM" />
+          <xs:field xpath="data" />
+        </xs:unique>
+        <xs:unique name="dbo_GEOGRAFIA_DIM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_GEOGRAFIA_DIM" />
+          <xs:field xpath="kraj" />
+        </xs:unique>
+        <xs:keyref name="FK__STATYSTYKI__kraj__29572725" refer="dbo_GEOGRAFIA_DIM_Constraint1">
+          <xs:selector xpath=".//dbo_STATYSTYKI_FACT" />
+          <xs:field xpath="kraj" />
+        </xs:keyref>
+        <xs:keyref name="FK__STATYSTYK__id_cz__286302EC" refer="dbo_CZAS_DIM_Constraint1">
+          <xs:selector xpath=".//dbo_STATYSTYKI_FACT" />
+          <xs:field xpath="id_czas" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Coronavirus xmlns="" />
+  </Schema>
+</DataSourceView>
