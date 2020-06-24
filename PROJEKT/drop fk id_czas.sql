@@ -1,0 +1,2 @@
+ALTER TABLE Coronavirus.dbo.STATYSTYKI_FACT
+DROP CONSTRAINT id_czas

@@ -1,0 +1,82 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>HD_kostka</Database>
+    <Server>DESKTOP-4GVPIF1\COVID</Server>
+    <ConnectionString>Data Source=DESKTOP-4GVPIF1\COVID;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>nwXdxsq0y+C2ztOc5s1CRgaGqEI=19.06.2020 03:28:2721.06.2020 10:30:38</TimeStamp>
+        <ID>
+          <String>Coronavirus</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>EY5Xcf55YXnrnfbDwfSpI6k4KDk=24.06.2020 20:40:3024.06.2020 17:48:47</TimeStamp>
+        <ID>
+          <String>Coronavirus</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DpJkXD4cP5ntAe3VbAiM0CBaDLY=24.06.2020 21:03:0324.06.2020 17:50:08</TimeStamp>
+        <ID>
+          <String>CZAS DIM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>77tkCsZ0WC50XJg7LZZGyuEJefo=24.06.2020 21:03:0324.06.2020 17:50:08</TimeStamp>
+        <ID>
+          <String>GEOGRAFIA DIM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0qWcq/R7vCLvnjC9yLl/XUz+Ujg=24.06.2020 18:03:2024.06.2020 17:50:08</TimeStamp>
+        <ID>
+          <String>PACJENT DIM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gg/U0stmDE6k7cm0Pt4gVUezkXQ=24.06.2020 18:03:2024.06.2020 17:50:08</TimeStamp>
+        <ID>
+          <String>STAN DIM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>d7LUU7Zj8N64gyQVCWUKEVGNPBQ=24.06.2020 22:12:0824.06.2020 17:50:08eLuAhyHFzCbcCdrZt8klwxce1xI=24.06.2020 17:50:0824.06.2020 17:50:08</TimeStamp>
+        <ID>
+          <String>Coronavirus</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>D4MKcHaNSzIl73qqePMoMFMDfuA=19.06.2020 03:28:2721.06.2020 10:30:38</TimeStamp>
+      <ID>
+        <String>HD_kostka</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-06-24T20:12:16.7Z</LastDeployed>
+</DeploymentSnapshot>
