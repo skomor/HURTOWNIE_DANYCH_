@@ -14,7 +14,7 @@ begin
 	--declare @DateAmount as int = 1 + DATEDIFF(day, @DateFirst, @DateLast);
 	print @DateAmount;
 
-	--USUN TO KURWA BO DZIEN ZA MALO BEDZIE
+
 
 	declare @AllDateAmount as int = (1 + (select top 1 count(id_czas) from STATYSTYKI_FACT group by kraj)); 
 	print @AllDateAmount;
